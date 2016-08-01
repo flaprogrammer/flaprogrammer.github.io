@@ -462,56 +462,56 @@ i[class^='icon-'] {
 i.icon-what5 {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -764px;
+  background-position: 0px -818px;
   width: 146px;
   height: 247px; }
 
 i.icon-what6 {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -1016px;
+  background-position: 0px -1070px;
   width: 146px;
   height: 247px; }
 
 i.icon-header_flag {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -78px;
+  background-position: 0px -97px;
   width: 18px;
   height: 18px; }
 
 i.icon-logo2x {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -601px;
+  background-position: 0px -655px;
   width: 422px;
   height: 158px; }
 
 i.icon-logo {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -260px;
+  background-position: 0px -314px;
   width: 200px;
   height: 57px; }
 
 i.icon-header_lamp {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -216px;
+  background-position: 0px -270px;
   width: 39px;
   height: 39px; }
 
 i.icon-header_phone {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -37px;
+  background-position: 0px -56px;
   width: 15px;
   height: 15px; }
 
 i.icon-header_profile {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -57px;
+  background-position: 0px -76px;
   width: 18px;
   height: 16px; }
 
@@ -525,21 +525,21 @@ i.icon-header_select {
 i.icon-work_loupe {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -176px;
+  background-position: 0px -230px;
   width: 35px;
   height: 35px; }
 
 i.icon-work_arrow {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -101px;
+  background-position: 0px -155px;
   width: 36px;
   height: 31px; }
 
 i.icon-work_arrow {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -137px;
+  background-position: 0px -191px;
   width: 34px;
   height: 34px; }
 
@@ -553,23 +553,37 @@ i.icon-work_arrow {
 i.icon-work_arrow {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -404px;
+  background-position: 0px -458px;
   width: 232px;
   height: 87px; }
 
 i.icon-work_arrow {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -496px;
+  background-position: 0px -550px;
   width: 165px;
   height: 100px; }
 
 i.icon-work_arrow {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -322px;
+  background-position: 0px -376px;
   width: 228px;
   height: 77px; }
+
+i.icon-burger {
+  display: inline-block;
+  background-image: url("../img/sprite.png?id=5859");
+  background-position: 0px -37px;
+  width: 21px;
+  height: 14px; }
+
+i.icon-logo320 {
+  display: inline-block;
+  background-image: url("../img/sprite.png?id=5859");
+  background-position: 0px -120px;
+  width: 104px;
+  height: 30px; }
 
 * {
   box-sizing: border-box; }
@@ -656,6 +670,12 @@ body {
   height: 40px;
   color: #ffffff;
   font-size: 15px; }
+
+.header-top--728 {
+  display: none; }
+
+.header-top--320 {
+  display: none; }
 
 .header-top__item {
   margin-left: 80px;
@@ -783,6 +803,47 @@ body {
   .header-nav__item.active {
     color: #e20211;
     border-bottom: 3px solid #ff0326; }
+
+@media screen and (max-width: 1172px) {
+  .header-top {
+    display: none; }
+  .header-top--728 {
+    display: block; }
+  .header__table {
+    width: 100%; }
+  .header__logo {
+    width: 220px; }
+  .header__open-but {
+    width: 187px; }
+  .header__live {
+    display: none; }
+  .header__table-el {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 9px; }
+  .header-nav {
+    display: none; }
+  .header-main {
+    display: none; } }
+
+@media screen and (max-width: 727px) {
+  .header-top--728 {
+    display: none; }
+  .header-top--320 {
+    display: block;
+    height: 64px; }
+  .header__logo320 {
+    height: 64px;
+    padding-top: 17px;
+    text-align: center; }
+  .icon-burger {
+    position: absolute;
+    top: 25px;
+    right: 20px; }
+  .icon-header_profile {
+    position: absolute;
+    top: 25px;
+    left: 20px; } }
 
 .footer-main--728 {
   display: none; }
@@ -1088,7 +1149,7 @@ body {
   content: '';
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -176px;
+  background-position: 0px -230px;
   width: 35px;
   height: 35px; }
 
@@ -1096,7 +1157,7 @@ body {
   content: '';
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -101px;
+  background-position: 0px -155px;
   width: 36px;
   height: 31px; }
 
@@ -1104,7 +1165,7 @@ body {
   content: '';
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -137px;
+  background-position: 0px -191px;
   width: 34px;
   height: 34px; }
 
@@ -1139,7 +1200,7 @@ body {
 .scheme-column:nth-child(1) .scheme-column-logo {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -404px;
+  background-position: 0px -458px;
   width: 232px;
   height: 87px;
   margin-bottom: 26px; }
@@ -1155,7 +1216,7 @@ body {
 .scheme-column:nth-child(3) .scheme-column-logo {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -496px;
+  background-position: 0px -550px;
   width: 165px;
   height: 100px;
   margin-top: -8px;
@@ -1164,7 +1225,7 @@ body {
 .scheme-column:nth-child(5) .scheme-column-logo {
   display: inline-block;
   background-image: url("../img/sprite.png?id=5859");
-  background-position: 0px -322px;
+  background-position: 0px -376px;
   width: 228px;
   height: 77px;
   margin-top: 13px;
