@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronbuilder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="row">
+    <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+        <form class="cronForm">
+            <div class="form-group">
+                <label>Select weekdays</label>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="js-weekday" data-val="1"> Monday
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"  class="js-weekday" data-val="2"> Tuesday
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"  class="js-weekday" data-val="3"> Wednesday
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"  class="js-weekday" data-val="4"> Thursday
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="js-weekday" data-val="5"> Friday
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="js-weekday" data-val="6"> Saturday
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="js-weekday" data-val="0"> Sunday
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="crud-start">Time from</label>
+                <input type="time" class="form-control" id="crud-start" placeholder="time from">
+            </div>
+            <div class="form-group">
+                <label for="crud-end">Time to</label>
+                <input type="time" class="form-control" id="crud-end" placeholder="time to">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sprintf/1.0.3/sprintf.js"></script>
+<script src="cron.min.js"></script>
+<script src="cronbuilder.js"></script>
+</body>
+</html>
