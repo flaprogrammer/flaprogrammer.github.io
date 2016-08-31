@@ -20133,7 +20133,7 @@
 			start_date = moment().add(moment().utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		if (state.now_or_date == "date") {
-			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
+			start_date = moment(state.time_on_picker).add(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		Dispatcher.emit(Actions.LOAD_CAMPAIGNS, start_date);
 		notify();
@@ -20145,7 +20145,7 @@
 			start_date = moment().add(moment().utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		if (state.now_or_date == "date") {
-			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
+			start_date = moment(state.time_on_picker).add(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		if (!notload) Dispatcher.emit(Actions.LOAD_CAMPAIGNS, start_date);
 		notify();
@@ -20158,7 +20158,7 @@
 			start_date = moment().add(moment().utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		if (state.now_or_date == "date") {
-			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').format();
+			start_date = moment(state.time_on_picker).add(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').format();
 			console.log(state.time_on_picker);
 		}
 		Dispatcher.emit(Actions.LOAD_CAMPAIGNS, start_date);
