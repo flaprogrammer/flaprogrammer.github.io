@@ -62,8 +62,6 @@
 	
 	//render(<CommentBox />, document.getElementById('content'));
 	(0, _reactDom.render)(_react2.default.createElement(Cmp.TimelinePage, null), document.getElementById('content'));
-	
-	console.log("test new");
 
 /***/ },
 /* 1 */
@@ -20134,7 +20132,7 @@
 			start_date = moment.now();
 		}
 		if (state.now_or_date == "date") {
-			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60, 'hours').format();
+			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').format();
 		}
 		Dispatcher.emit(Actions.LOAD_CAMPAIGNS, start_date);
 		notify();
@@ -51051,12 +51049,12 @@
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'tcontent__title' },
+						{ className: 'tcontent__title tcontent__link' },
 						this.state.texts["Edit layout"]
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'tcontent__value' },
+						{ className: 'tcontent__value tcontent__link' },
 						_react2.default.createElement(
 							'a',
 							{
@@ -51068,12 +51066,12 @@
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'tcontent__title' },
+						{ className: 'tcontent__title tcontent__link' },
 						this.state.texts["Schedule event"]
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'tcontent__value' },
+						{ className: 'tcontent__value tcontent__link' },
 						_react2.default.createElement(
 							'a',
 							{
@@ -51085,12 +51083,12 @@
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'tcontent__title' },
+						{ className: 'tcontent__title tcontent__link' },
 						this.state.texts["Campaign"]
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'tcontent__value' },
+						{ className: 'tcontent__value tcontent__link' },
 						_react2.default.createElement(
 							'a',
 							{
@@ -51102,12 +51100,12 @@
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'tcontent__title' },
+						{ className: 'tcontent__title tcontent__link' },
 						this.state.texts["Preview"]
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'tcontent__value' },
+						{ className: 'tcontent__value tcontent__link' },
 						_react2.default.createElement(
 							'a',
 							{
