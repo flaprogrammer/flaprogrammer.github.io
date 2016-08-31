@@ -20126,7 +20126,7 @@
 	});
 	
 	Dispatcher.listen(Actions.TIMEZONE_SELECT, function (val) {
-		state.chozen_timezone = val;
+		state.chozen_timezone = parseInt(val);
 		var start_date = void 0;
 		debugger;
 		if (state.now_or_date == "now") {
