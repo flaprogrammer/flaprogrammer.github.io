@@ -20132,7 +20132,7 @@
 			start_date = moment.now();
 		}
 		if (state.now_or_date == "date") {
-			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').format();
+			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		Dispatcher.emit(Actions.LOAD_CAMPAIGNS, start_date);
 		notify();
@@ -20144,7 +20144,7 @@
 			start_date = moment.now();
 		}
 		if (state.now_or_date == "date") {
-			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').format();
+			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		if (!notload) Dispatcher.emit(Actions.LOAD_CAMPAIGNS, start_date);
 		notify();
@@ -50917,7 +50917,7 @@
 					_react2.default.createElement(
 						'div',
 						{ className: 'timeline__campaign-start' },
-						moment(tl.start_at).utcOffset(offset).format("HH:mm:ss")
+						moment(tl.start_at).format("HH:mm:ss")
 					),
 					cmp_node,
 					cmp_distance_node
