@@ -20129,7 +20129,7 @@
 		state.chozen_timezone = val;
 		var start_date = void 0;
 		if (state.now_or_date == "now") {
-			start_date = moment.now();
+			start_date = moment().add(moment().utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		if (state.now_or_date == "date") {
 			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
@@ -20141,7 +20141,7 @@
 		state.time_on_picker = val;
 		var start_date = void 0;
 		if (state.now_or_date == "now") {
-			start_date = moment.now();
+			start_date = moment().add(moment().utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		if (state.now_or_date == "date") {
 			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
@@ -20154,7 +20154,7 @@
 		state.now_or_date = val;
 		var start_date = void 0;
 		if (state.now_or_date == "now") {
-			start_date = moment.now();
+			start_date = moment().add(moment().utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
 		if (state.now_or_date == "date") {
 			start_date = moment(state.time_on_picker).subtract(moment(state.time_on_picker).utcOffset() / 60 - state.chozen_timezone, 'hours').format();
