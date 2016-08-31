@@ -51175,7 +51175,7 @@
 		},
 		_onDateChange: function _onDateChange(date) {
 			console.log(date);
-			this.setState({ startDate: parseInt(date) });
+			this.setState({ startDate: moment(date).format() });
 			Dispatcher.emit(Actions.TIME_SELECT, parseInt(date));
 		},
 		render: function render() {
