@@ -19977,7 +19977,7 @@
 		active_group: "31c9ca68-a27b-487d-8eff-e63fda0148c3",
 		active_display: "",
 		client_timezone: 0,
-		chozen_timezone: 0,
+		chozen_timezone: moment().utcOffset(),
 		time_on_picker: "",
 		now_or_date: "now",
 		displaygroups: [],
@@ -20128,6 +20128,7 @@
 	Dispatcher.listen(Actions.TIMEZONE_SELECT, function (val) {
 		state.chozen_timezone = val;
 		var start_date = void 0;
+		debugger;
 		if (state.now_or_date == "now") {
 			start_date = moment().add(moment().utcOffset() / 60 - state.chozen_timezone, 'hours').utcOffset(state.chozen_timezone).format();
 		}
@@ -50733,17 +50734,7 @@
 					_react2.default.createElement(
 						'label',
 						null,
-						_react2.default.createElement('input', { type: 'radio', name: 'browser', value: '0', onChange: this._onSelect, defaultChecked: true }),
-						' UTC'
-					)
-				),
-				_react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-						'label',
-						null,
-						_react2.default.createElement('input', { type: 'radio', name: 'browser', value: new Date().getTimezoneOffset() / -60, onChange: this._onSelect }),
+						_react2.default.createElement('input', { type: 'radio', name: 'browser', defaultChecked: true, value: new Date().getTimezoneOffset() / -60, onChange: this._onSelect }),
 						' ',
 						this.state.texts["Local"],
 						' (UTC ',
