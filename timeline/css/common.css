@@ -1,0 +1,226 @@
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.timeline__page {
+  padding-top: 20px; }
+
+.timeline__wrapper {
+  width: 100%;
+  height: 355px;
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+.timeline {
+  display: inline-block;
+  position: relative;
+  margin: 0 30px;
+  height: 290px;
+  background: #FFFFFF;
+  border: 2px solid #666666;
+  transition: left 1s ease; }
+
+.timeline__rule {
+  width: 100%;
+  position: absolute;
+  bottom: -3px; }
+
+.timeline__line {
+  width: 100%;
+  height: 3px; }
+
+.timeline__dot {
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 20px;
+  background: #666666; }
+
+.timeline__dot-text {
+  position: absolute;
+  top: 20px;
+  transform: translateX(-50%); }
+
+.timeline__boxes {
+  display: inline-block;
+  height: 290px;
+  padding: 0 0 13px;
+  white-space: nowrap; }
+
+.timeline__box {
+  display: inline-block;
+  height: 231px;
+  vertical-align: top;
+  margin: 0 1px;
+  border: 2px solid #666666;
+  background: #eeeeee;
+  overflow: hidden;
+  cursor: pointer; }
+  .timeline__box.active {
+    background: #cccccc; }
+
+.timeline__distance {
+  display: inline-block;
+  height: 100%; }
+
+.timeline__load-but {
+  vertical-align: top;
+  display: inline-block;
+  height: 100%;
+  width: 150px;
+  text-align: center;
+  padding-top: 75px; }
+
+.timeline__load-but-text {
+  display: inline-block;
+  background: rgba(26, 167, 255, 0.36);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer; }
+
+.timeline__box-name {
+  text-align: center;
+  height: 40px;
+  overflow: hidden;
+  white-space: normal;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.timeline__box-dur {
+  text-align: left;
+  margin-left: 15px;
+  font-size: 10px;
+  overflow: hidden; }
+
+.timeline__box-img {
+  width: 100%;
+  max-width: 192px;
+  margin: auto;
+  height: 150px;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.timeline__box-img-wrapper {
+  text-align: center;
+  overflow: hidden; }
+
+.timeline__content {
+  height: 270px;
+  padding: 30px 20px 0;
+  margin: auto; }
+
+.timeline__row {
+  margin-bottom: 50px; }
+
+.tcontent__title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  width: 49%;
+  margin-bottom: 10px; }
+
+.tcontent__value {
+  display: inline-block;
+  font-size: 20px;
+  width: 49%;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.tcontent__left {
+  width: 60%;
+  float: left; }
+
+.tcontent__right {
+  position: relative;
+  width: 40%;
+  float: left; }
+
+.tcontent__img {
+  position: relative;
+  top: 33px;
+  max-width: 100%;
+  max-height: 100%; }
+
+.timeline__period {
+  padding-top: 30px;
+  padding-left: 50px; }
+
+.timeline__period-left {
+  float: left;
+  width: 170px; }
+
+.timeline__period-right {
+  position: relative;
+  top: 6px;
+  left: -30px;
+  float: left;
+  width: 250px; }
+
+.timeline__campaign {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 50px;
+  overflow: hidden; }
+
+.timeline__campaign-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  width: 95%;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.timeline__campaign-start {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 17px;
+  left: 10px; }
+
+.table-condensed > tbody > tr > td,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > td,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > thead > tr > th {
+  text-align: center; }
+
+.table-condensed .day {
+  cursor: pointer; }
+
+.table-condensed .day.active {
+  background: rgba(85, 106, 233, 0.5); }
+
+.preloader3__wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 80px; }
+
+.preloader3 {
+  position: relative;
+  top: 80px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  padding: 0px;
+  border-radius: 100%;
+  border: 2px solid;
+  border-top-color: rgba(0, 0, 0, 0.65);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-left-color: rgba(0, 0, 0, 0.15);
+  border-right-color: rgba(0, 0, 0, 0.15);
+  animation: preloader3 0.8s ease-in-out infinite alternate; }
+
+@keyframes preloader3 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
