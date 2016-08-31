@@ -20102,13 +20102,13 @@
 	
 		Dispatcher.emit(Actions.API_CAMPAIGNS, {
 			display_id: state.active_display,
-			start_date: moment(date).format(),
-			end_date: moment(date).add(t, 'h').format()
+			start_date: moment(date).utcOffset(state.chozen_timezone).format(),
+			end_date: moment(date).add(t, 'h').utcOffset(state.chozen_timezone).format()
 		});
 		state.last_campaign_query = {
 			display_id: state.active_display,
-			start_date: moment(date).format(),
-			end_date: moment(date).add(t, 'h').format(),
+			start_date: moment(date).utcOffset(state.chozen_timezone).format(),
+			end_date: moment(date).add(t, 'h').utcOffset(state.chozen_timezone).format(),
 			offset: t
 		};
 		notify();
