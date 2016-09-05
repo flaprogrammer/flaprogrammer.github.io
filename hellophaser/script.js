@@ -111,8 +111,6 @@ window.onload = function () {
 
     function render() {
 
-        weapon.debug();
-        tank1.debug();
 
     }
 
