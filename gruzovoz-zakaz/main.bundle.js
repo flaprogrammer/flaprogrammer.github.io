@@ -449,7 +449,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".points-list {\r\n  position: relative;\r\n  width: 100%;\r\n}\r\n\r\n.point {\r\n  display: inline-block;\r\n  font-size: 14px;\r\n  width: 100%;\r\n  padding: 10px 10px;\r\n  margin-bottom: 10px;\r\n  background: #e7ffea;\r\n  cursor: pointer;\r\n  transition: background 0.3s ease;\r\n}\r\n\r\n.point.opened {\r\n  background: #d3f1d6;\r\n}\r\n\r\ninput[type=\"text\"], input[type=\"tel\"] {\r\n  background: #ffffff;\r\n}\r\n\r\n.order-form {\r\n  max-height: 0;\r\n  transition: max-height 0.5s ease;\r\n  overflow: hidden;\r\n}\r\n\r\nform {\r\n  margin-bottom: 0;\r\n  margin-top: 15px;\r\n  width: 96%;\r\n  margin-left: 3%;\r\n}\r\n\r\nform label {\r\n  font-size: 14px;\r\n}\r\n\r\n.opened .order-form {\r\n  max-height: 300px;\r\n}\r\n\r\ni {\r\n  width: 5%;\r\n  margin-right: 2%;\r\n  text-align: center;\r\n}\r\n\r\ntd:last-child {\r\n  text-align: right;\r\n}\r\n\r\ntable {\r\n  width: 86%;\r\n  margin-left: 7%;\r\n  margin-top: 10px;\r\n  margin-bottom: 0;\r\n}\r\n\r\n.table-wrapper {\r\n  position: relative;\r\n}\r\n\r\n.table-icon {\r\n  position: absolute;\r\n  top: 6px;\r\n}\r\n\r\ntd {\r\n  border-color: #d2e8d5;\r\n}\r\n\r\ntr:last-child td {\r\n  border-bottom: none;\r\n}\r\n\r\ntd:first-child {\r\n  width: 50%;\r\n}\r\n\r\np {\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".points-list {\r\n  position: relative;\r\n  width: 100%;\r\n}\r\n\r\n.point {\r\n  display: inline-block;\r\n  font-size: 14px;\r\n  width: 100%;\r\n  padding: 10px 10px;\r\n  margin-bottom: 10px;\r\n  background: #e7ffea;\r\n  cursor: pointer;\r\n  transition: background 0.3s ease;\r\n}\r\n\r\n.point.opened {\r\n  background: #d3f1d6;\r\n}\r\n\r\ninput[type=\"text\"], input[type=\"tel\"] {\r\n  background: #ffffff;\r\n}\r\n\r\n.order-form {\r\n  max-height: 0;\r\n  transition: max-height 0.5s ease;\r\n  overflow: hidden;\r\n}\r\n\r\nform {\r\n  margin-bottom: 0;\r\n  margin-top: 15px;\r\n  width: 96%;\r\n  margin-left: 3%;\r\n}\r\n\r\nform label {\r\n  font-size: 14px;\r\n}\r\n\r\n.opened .order-form {\r\n  max-height: 300px;\r\n}\r\n\r\ni {\r\n  width: 5%;\r\n  margin-right: 2%;\r\n  text-align: center;\r\n}\r\n\r\ntd:last-child {\r\n  text-align: right;\r\n}\r\n\r\ntable {\r\n  width: 86%;\r\n  margin-left: 7%;\r\n  margin-top: 10px;\r\n  margin-bottom: 0;\r\n}\r\n\r\n.table-wrapper {\r\n  position: relative;\r\n}\r\n\r\n.table-icon {\r\n  position: absolute;\r\n  top: 6px;\r\n}\r\n\r\ntd {\r\n  border-color: #d2e8d5;\r\n}\r\n\r\ntr:last-child td {\r\n  border-bottom: none;\r\n}\r\n\r\ntd:first-child {\r\n  width: 50%;\r\n}\r\n\r\np {\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\nselect.invalid, input.invalid {\r\n  border-color: #f76868;\r\n}\r\n\r\n\r\ninput.disabled {\r\n  cursor: auto;\r\n  background: #888888;\r\n  border-color: #888888;\r\n  color: #666666;\r\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -462,7 +462,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/points/points.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"sk-circle\" *ngIf=\"pointsAreLoading\">\n  <div class=\"sk-circle1 sk-child\"></div>\n  <div class=\"sk-circle2 sk-child\"></div>\n  <div class=\"sk-circle3 sk-child\"></div>\n  <div class=\"sk-circle4 sk-child\"></div>\n  <div class=\"sk-circle5 sk-child\"></div>\n  <div class=\"sk-circle6 sk-child\"></div>\n  <div class=\"sk-circle7 sk-child\"></div>\n  <div class=\"sk-circle8 sk-child\"></div>\n  <div class=\"sk-circle9 sk-child\"></div>\n  <div class=\"sk-circle10 sk-child\"></div>\n  <div class=\"sk-circle11 sk-child\"></div>\n  <div class=\"sk-circle12 sk-child\"></div>\n</div>\n<div class=\"points-list\" *ngIf=\"!pointsAreLoading\">\n  <h6 class=\"count\" *ngIf=\"points\">Найдено {{points.length}} предложений</h6>\n  <div class=\"point\" *ngFor=\"let point of points; let i = index\"\n    (click)=\"onPointClick(i)\"\n    [ngClass]=\"{'opened': openedPoint==i}\">\n    <p><strong><i class=\"fa fa-check-square\" aria-hidden=\"true\"></i>{{point.name}}</strong></p>\n    <p><i class=\"fa fa-address-book-o\" aria-hidden=\"true\"></i>Адрес доставки: {{point.address}}</p>\n    <p><i class=\"fa fa-arrows-v\" aria-hidden=\"true\"></i>Расстояние: {{point.distance}}км</p>\n    <div class=\"table-wrapper\">\n      <i class=\"fa fa-rub table-icon\" aria-hidden=\"true\"></i>\n      <table>\n        <tbody>\n        <tr>\n          <td>Материал</td>\n          <td>{{point.materialPrice}} руб.</td>\n        </tr>\n        <tr>\n          <td>Доставка</td>\n          <td>{{point.delivery}} руб.</td>\n        </tr>\n        <tr>\n          <td>Итого</td>\n          <td>{{point.fullPrice}} руб.</td>\n        </tr>\n        </tbody>\n      </table>\n    </div>\n    <div class=\"order-form\">\n      <form>\n        <label for=\"name\">Имя</label>\n        <input id=\"name\" type=\"text\" name=\"name\" [(ngModel)]=\"name\">\n        <label for=\"phone\">Телефон</label>\n        <input id=\"phone\" type=\"tel\" name=\"phone\" [(ngModel)]=\"phone\">\n        <input type=\"submit\" value=\"Заказать\" (click)=\"onOrderClick(point)\">\n      </form>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"sk-circle\" *ngIf=\"pointsAreLoading\">\n  <div class=\"sk-circle1 sk-child\"></div>\n  <div class=\"sk-circle2 sk-child\"></div>\n  <div class=\"sk-circle3 sk-child\"></div>\n  <div class=\"sk-circle4 sk-child\"></div>\n  <div class=\"sk-circle5 sk-child\"></div>\n  <div class=\"sk-circle6 sk-child\"></div>\n  <div class=\"sk-circle7 sk-child\"></div>\n  <div class=\"sk-circle8 sk-child\"></div>\n  <div class=\"sk-circle9 sk-child\"></div>\n  <div class=\"sk-circle10 sk-child\"></div>\n  <div class=\"sk-circle11 sk-child\"></div>\n  <div class=\"sk-circle12 sk-child\"></div>\n</div>\n<div class=\"points-list\" *ngIf=\"!pointsAreLoading\">\n  <h6 class=\"count\" *ngIf=\"points\">Найдено {{points.length}} предложений</h6>\n  <div class=\"point\" *ngFor=\"let point of points; let i = index\"\n    (click)=\"onPointClick(i)\"\n    [ngClass]=\"{'opened': openedPoint==i}\">\n    <p><strong><i class=\"fa fa-check-square\" aria-hidden=\"true\"></i>{{point.name}}</strong></p>\n    <p><i class=\"fa fa-address-book-o\" aria-hidden=\"true\"></i>Адрес доставки: {{point.address}}</p>\n    <p><i class=\"fa fa-arrows-v\" aria-hidden=\"true\"></i>Расстояние: {{point.distance}}км</p>\n    <div class=\"table-wrapper\">\n      <i class=\"fa fa-rub table-icon\" aria-hidden=\"true\"></i>\n      <table>\n        <tbody>\n        <tr>\n          <td>Материал</td>\n          <td>{{point.materialPrice}} руб.</td>\n        </tr>\n        <tr>\n          <td>Доставка</td>\n          <td>{{point.delivery}} руб.</td>\n        </tr>\n        <tr>\n          <td>Итого</td>\n          <td>{{point.fullPrice}} руб.</td>\n        </tr>\n        </tbody>\n      </table>\n    </div>\n    <div class=\"order-form\">\n      <form #orderForm=\"ngForm\">\n        <label for=\"name\">Имя</label>\n        <input id=\"name\"\n               type=\"text\"\n               name=\"name\"\n               [(ngModel)]=\"name\"\n               #orderName=\"ngModel\"\n               [ngClass]=\"{'invalid': orderName.invalid && (orderName.dirty || orderName.touched)}\"\n               required>\n        <label for=\"phone\">Телефон</label>\n        <input id=\"phone\"\n               type=\"tel\"\n               name=\"phone\"\n               [(ngModel)]=\"phone\"\n               #orderPhone=\"ngModel\"\n               pattern=\"[0-9]+[0-9,-]*[0-9]+\"\n               [ngClass]=\"{'invalid': orderPhone.invalid && (orderPhone.dirty || orderPhone.touched)}\"\n               required>\n        <input type=\"submit\" value=\"Заказать\" (click)=\"onOrderClick(point)\" [ngClass]=\"{'disabled': !isValid()}\">\n      </form>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -529,6 +529,9 @@ var PointsComponent = (function () {
         this.eventsService.broadcast('openPoint', this.points[index], this.searchForm);
     };
     PointsComponent.prototype.onOrderClick = function (point) {
+        if (!this.isValid()) {
+            return;
+        }
         var form = {
             complect: point.item.id,
             count: this.searchForm.count,
@@ -548,6 +551,15 @@ var PointsComponent = (function () {
                 window.alert(res.data.message);
             }
         });
+    };
+    PointsComponent.prototype.isValid = function () {
+        if (!this.name) {
+            return false;
+        }
+        if (!/[0-9]+[0-9,-]*[0-9]+/.test(this.phone)) {
+            return false;
+        }
+        return true;
     };
     return PointsComponent;
 }());
@@ -573,7 +585,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "input.invalid {\r\n  border-color: #f76868;\r\n}\r\n.label-inline {\r\n  font-size: 14px;\r\n}\r\nfieldset, input[type='submit'] {\r\n  margin-bottom: 0;\r\n}\r\n", ""]);
+exports.push([module.i, "select.invalid, input.invalid {\r\n  border-color: #f76868;\r\n}\r\n.label-inline {\r\n  font-size: 14px;\r\n}\r\nfieldset, input[type='submit'] {\r\n  margin-bottom: 0;\r\n}\r\ninput.disabled {\r\n  cursor: auto;\r\n  background: #888888;\r\n  border-color: #888888;\r\n  color: #666666;\r\n}\r\n", ""]);
 
 // exports
 
@@ -586,7 +598,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/searchForm/searchForm.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form (ngSubmit)=\"onSubmit()\">\n  <fieldset>\n    <label for=\"complect\">Материал</label>\n    <select id=\"complect\"\n            [(ngModel)]=\"form.complect\"\n            name=\"complect\">\n      <option *ngFor=\"let com of complectsArray\" [value]=\"com.id\">{{ com.name }}</option>\n    </select>\n\n    <label for=\"address\">Адрес</label>\n    <input auto-complete\n         name=\"address\"\n         id=\"address\"\n         type=\"text\"\n         [(ngModel)]=\"form.address\"\n         [source]=\"getAddresses\"\n         display-property-name=\"name\"\n         value-property-name=\"\"\n         (valueChanged)=\"onAddressChoose($event)\"\n         [value-formatter]=\"addressValueFormatter\"\n         [list-formatter]=\"addressListFormatter\"/>\n\n    <label for=\"count\">Объем материала</label>\n    <div class=\"row\">\n      <div class=\"column column-67\">\n        <input type=\"number\"\n               id=\"count\"\n               [(ngModel)]=\"form.count\"\n               name=\"count\"\n               #count=\"ngModel\"\n               [ngClass]=\"{'invalid': count.invalid && (count.dirty || count.touched)}\"\n               required>\n      </div>\n      <div class=\"column column-33\">\n        <select id=\"unit\"\n                [(ngModel)]=\"form.unit\"\n                name=\"unit\">\n          <option value=\"т\">Тонн</option>\n          <option value=\"куб.м\">Куб.м.</option>\n        </select>\n      </div>\n    </div>\n\n    <input type=\"checkbox\" id=\"cardpay\">\n    <label class=\"label-inline\" for=\"cardpay\">Безналичный расчет (т.ч. НДС 18%)</label>\n    <div>\n      <input class=\"button-primary\" type=\"submit\" value=\"Найти предложения\">\n    </div>\n  </fieldset>\n</form>\n"
+module.exports = "<form #searchForm=\"ngForm\" (ngSubmit)=\"onSubmit()\">\n  <fieldset>\n    <label for=\"complect\">Материал</label>\n    <select id=\"complect\"\n            [(ngModel)]=\"form.complect\"\n            #complect=\"ngModel\"\n            [ngClass]=\"{'invalid': complect.invalid && (complect.dirty || complect.touched)}\"\n            name=\"complect\"\n            [ngClass]=\"{'error': errors.complect}\"\n            required>\n      <option *ngFor=\"let com of complectsArray\" [value]=\"com.id\">{{ com.name }}</option>\n    </select>\n\n    <label for=\"address\">Адрес</label>\n    <input auto-complete\n         name=\"address\"\n         id=\"address\"\n         type=\"text\"\n         [(ngModel)]=\"form.address\"\n         #address=\"ngModel\"\n         [ngClass]=\"{'invalid': address.invalid && (address.dirty || address.touched)}\"\n         [source]=\"getAddresses\"\n         display-property-name=\"name\"\n         value-property-name=\"\"\n         (valueChanged)=\"onAddressChoose($event)\"\n         [value-formatter]=\"addressValueFormatter\"\n         [list-formatter]=\"addressListFormatter\"\n         required/>\n\n    <label for=\"count\">Объем материала</label>\n    <div class=\"row\">\n      <div class=\"column column-67\">\n        <input type=\"number\"\n               id=\"count\"\n               [(ngModel)]=\"form.count\"\n               name=\"count\"\n               #count=\"ngModel\"\n               [ngClass]=\"{'invalid': count.invalid && (count.dirty || count.touched)}\"\n               required>\n      </div>\n      <div class=\"column column-33\">\n        <select id=\"unit\"\n                [(ngModel)]=\"form.unit\"\n                name=\"unit\">\n          <option value=\"т\">Тонн</option>\n          <option value=\"куб.м\">Куб.м.</option>\n        </select>\n      </div>\n    </div>\n\n    <input type=\"checkbox\" id=\"cardpay\">\n    <label class=\"label-inline\" for=\"cardpay\">Безналичный расчет (т.ч. НДС 18%)</label>\n    <div>\n      <input class=\"button-primary\" type=\"submit\" value=\"Найти предложения\" [ngClass]=\"{'disabled': !isValid()}\">\n    </div>\n  </fieldset>\n</form>\n"
 
 /***/ }),
 
@@ -667,8 +679,26 @@ var SearchFormComponent = (function () {
         });
         return items;
     };
+    SearchFormComponent.prototype.isValid = function () {
+        if (!this.form.lat || !this.form.lng) {
+            return false;
+        }
+        if (!this.form.complect) {
+            return false;
+        }
+        if (!this.form.count) {
+            return false;
+        }
+        if (!this.form.unit) {
+            return false;
+        }
+        return true;
+    };
     SearchFormComponent.prototype.onSubmit = function () {
         var _this = this;
+        if (!this.isValid()) {
+            return;
+        }
         var request = {
             _lat: this.form.lat,
             _lng: this.form.lng,
