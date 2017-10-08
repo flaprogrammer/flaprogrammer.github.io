@@ -103,12 +103,15 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__points_points_component__ = __webpack_require__("../../../../../src/app/points/points.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__events_service__ = __webpack_require__("../../../../../src/app/events.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__map_map_component__ = __webpack_require__("../../../../../src/app/map/map.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ng2_select__ = __webpack_require__("../../../../ng2-select/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ng2_select___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_ng2_select__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -135,11 +138,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_11__map_map_component__["a" /* MapComponent */]
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
             __WEBPACK_IMPORTED_MODULE_6__angular_forms__["FormsModule"],
             __WEBPACK_IMPORTED_MODULE_4__ngui_auto_complete__["NguiAutoCompleteModule"],
-            __WEBPACK_IMPORTED_MODULE_8__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
+            __WEBPACK_IMPORTED_MODULE_8__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_12_ng2_select__["SelectModule"]
         ],
         providers: [__WEBPACK_IMPORTED_MODULE_5__backend_backend_service__["a" /* BackendService */], __WEBPACK_IMPORTED_MODULE_10__events_service__["a" /* EventsService */], {
                 provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["LOCALE_ID"],
@@ -205,6 +209,7 @@ var BackendService = (function () {
         params.set('complect', form.complect);
         params.set('count', form.count);
         params.set('unit', form.unit);
+        params.set('nds', form.nds);
         return this.fetch('point', this.getOptions(params));
     };
     BackendService.prototype.addOrder = function (id, form) {
@@ -589,7 +594,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "select.invalid, input.invalid {\r\n  border-color: #f76868;\r\n}\r\n.label-inline {\r\n  font-size: 14px;\r\n}\r\nfieldset, input[type='submit'] {\r\n  margin-bottom: 0;\r\n}\r\ninput.disabled {\r\n  cursor: auto;\r\n  background: #888888;\r\n  border-color: #888888;\r\n  color: #666666;\r\n}\r\nselect, input {\r\n  border-radius: 3px;\r\n}\r\n", ""]);
+exports.push([module.i, "select.invalid, input.invalid {\r\n  border-color: #f76868;\r\n}\r\n.label-inline {\r\n  font-size: 14px;\r\n}\r\nfieldset, input[type='submit'] {\r\n  margin-bottom: 0;\r\n}\r\ninput.disabled {\r\n  cursor: auto;\r\n  background: #888888;\r\n  border-color: #888888;\r\n  color: #666666;\r\n}\r\nselect, input {\r\n  border-radius: 3px;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -602,7 +607,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/searchForm/searchForm.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form #searchForm=\"ngForm\" (ngSubmit)=\"onSubmit()\">\n  <fieldset>\n    <label for=\"complect\">Материал</label>\n    <select id=\"complect\"\n            [(ngModel)]=\"form.complect\"\n            #complect=\"ngModel\"\n            [ngClass]=\"{'invalid': complect.invalid && (complect.dirty || complect.touched)}\"\n            name=\"complect\"\n            [ngClass]=\"{'error': errors.complect}\"\n            required>\n      <option *ngFor=\"let com of complectsArray\" [value]=\"com.id\">{{ com.name }}</option>\n    </select>\n\n    <label for=\"address\">Адрес</label>\n    <input auto-complete\n         name=\"address\"\n         id=\"address\"\n         type=\"text\"\n         [(ngModel)]=\"form.address\"\n         #address=\"ngModel\"\n         [ngClass]=\"{'invalid': address.invalid && (address.dirty || address.touched)}\"\n         [source]=\"getAddresses\"\n         display-property-name=\"name\"\n         value-property-name=\"\"\n         (valueChanged)=\"onAddressChoose($event)\"\n         [value-formatter]=\"addressValueFormatter\"\n         [list-formatter]=\"addressListFormatter\"\n         required/>\n\n    <label for=\"count\">Объем материала</label>\n    <div class=\"row\">\n      <div class=\"column column-67\">\n        <input type=\"number\"\n               id=\"count\"\n               [(ngModel)]=\"form.count\"\n               name=\"count\"\n               #count=\"ngModel\"\n               [ngClass]=\"{'invalid': count.invalid && (count.dirty || count.touched)}\"\n               required>\n      </div>\n      <div class=\"column column-33\">\n        <select id=\"unit\"\n                [(ngModel)]=\"form.unit\"\n                name=\"unit\">\n          <option value=\"т\">Тонн</option>\n          <option value=\"куб.м\">Куб.м.</option>\n        </select>\n      </div>\n    </div>\n\n    <input type=\"checkbox\"\n           id=\"nds\"\n           [(ngModel)]=\"form.nds\"\n           name=\"nds\">\n    <label class=\"label-inline\" for=\"nds\">Безналичный расчет (т.ч. НДС 18%)</label>\n    <div>\n      <input class=\"button-primary\" type=\"submit\" value=\"Найти предложения\" [ngClass]=\"{'disabled': !isValid()}\">\n    </div>\n  </fieldset>\n</form>\n"
+module.exports = "<form #searchForm=\"ngForm\" (ngSubmit)=\"onSubmit()\">\n  <fieldset>\n    <label for=\"complect\">Материал</label>\n    <ng-select [allowClear]=\"false\"\n               id=\"complect\"\n               [items]=\"complectsArray\"\n               (selected)=\"onMaterialSelect($event)\"\n               placeholder=\"Выберите материал\"></ng-select>\n    <!--<select id=\"complect\"\n            [(ngModel)]=\"form.complect\"\n            #complect=\"ngModel\"\n            [ngClass]=\"{'invalid': complect.invalid && (complect.dirty || complect.touched)}\"\n            name=\"complect\"\n            [ngClass]=\"{'error': errors.complect}\"\n            required>\n      <option *ngFor=\"let com of complectsArray\" [value]=\"com.id\">{{ com.text }}</option>\n    </select>-->\n\n    <label for=\"address\">Адрес</label>\n    <input auto-complete\n         name=\"address\"\n         id=\"address\"\n         type=\"text\"\n         [(ngModel)]=\"form.address\"\n         #address=\"ngModel\"\n         [ngClass]=\"{'invalid': address.invalid && (address.dirty || address.touched)}\"\n         [source]=\"getAddresses\"\n         display-property-name=\"name\"\n         value-property-name=\"\"\n         (valueChanged)=\"onAddressChoose($event)\"\n         [value-formatter]=\"addressValueFormatter\"\n         [list-formatter]=\"addressListFormatter\"\n         required/>\n\n    <label for=\"count\">Объем материала</label>\n    <div class=\"row\">\n      <div class=\"column column-67\">\n        <input type=\"number\"\n               id=\"count\"\n               [(ngModel)]=\"form.count\"\n               name=\"count\"\n               #count=\"ngModel\"\n               [ngClass]=\"{'invalid': count.invalid && (count.dirty || count.touched)}\"\n               required>\n      </div>\n      <div class=\"column column-33\">\n        <select id=\"unit\"\n                [(ngModel)]=\"form.unit\"\n                name=\"unit\">\n          <option value=\"т\">Тонн</option>\n          <option value=\"куб.м\">Куб.м.</option>\n        </select>\n      </div>\n    </div>\n\n    <input type=\"checkbox\"\n           id=\"nds\"\n           [(ngModel)]=\"form.nds\"\n           name=\"nds\">\n    <label class=\"label-inline\" for=\"nds\">Безналичный расчет (т.ч. НДС 18%)</label>\n    <div>\n      <input class=\"button-primary\" type=\"submit\" value=\"Найти предложения\" [ngClass]=\"{'disabled': !isValid()}\">\n    </div>\n  </fieldset>\n</form>\n"
 
 /***/ }),
 
@@ -664,7 +669,9 @@ var SearchFormComponent = (function () {
         this.addressListFormatter = function (data) { return data.name; };
         this.addressValueFormatter = function (data) { return data.name; };
         backendService.getComplects()
-            .subscribe(function (res) { return _this.complectsArray = res.data.items; });
+            .subscribe(function (res) { return _this.complectsArray = res.data.items.map(function (item) {
+            return { id: item.id, text: item.name };
+        }); });
     }
     SearchFormComponent.prototype.onAddressChoose = function (value) {
         var _this = this;
@@ -676,6 +683,9 @@ var SearchFormComponent = (function () {
                 _this.eventsService.broadcast('getDeliveryAddress', [_this.form.lat, _this.form.lng]);
             }
         });
+    };
+    SearchFormComponent.prototype.onMaterialSelect = function (value) {
+        this.form.complect = value.id;
     };
     SearchFormComponent.prototype.mapAddresses = function (res) {
         var items = res.data.items;
