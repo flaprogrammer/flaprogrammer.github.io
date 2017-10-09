@@ -177,11 +177,11 @@ html, body {
     text-align: center;
     margin-bottom: 30px; }
   .dignity .column:nth-child(1) .logo {
-    background: url(../img/images/u208.png) no-repeat; }
+    background: url(../img/images/fast-delivery.svg) no-repeat; }
   .dignity .column:nth-child(2) .logo {
-    background: url(../img/images/u222.png) no-repeat; }
+    background: url(../img/images/checked-files.svg) no-repeat; }
   .dignity .column:nth-child(3) .logo {
-    background: url(../img/images/u215.png) no-repeat; }
+    background: url(../img/images/budget.svg) no-repeat; }
   .dignity .logo {
     background-size: 100%;
     height: 50px;
@@ -202,21 +202,30 @@ html, body {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 70px; }
-  .service .content .title {
-    margin-bottom: 10px;
-    margin-top: 50px; }
-  .service .content .column {
-    margin-top: 40px; }
-    .service .content .column .title {
-      margin-top: 18px;
+  .service .content {
+    width: 80%;
+    margin: auto; }
+    @media screen and (max-width: 1172px) {
+      .service .content {
+        width: 90%; } }
+    .service .content .title {
       margin-bottom: 10px;
-      font-size: 18px; }
-    .service .content .column .text {
-      font-size: 13px;
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; }
+      margin-top: 50px; }
+    .service .content .column {
+      margin-top: 40px; }
+      .service .content .column .image {
+        height: 200px;
+        width: 200px; }
+      .service .content .column .title {
+        margin-top: 18px;
+        margin-bottom: 10px;
+        font-size: 18px; }
+      .service .content .column .text {
+        font-size: 13px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
 
 .feedback {
   background: url(../img/images/caption.jpg) no-repeat;
