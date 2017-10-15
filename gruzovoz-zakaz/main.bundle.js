@@ -21,7 +21,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".root {\r\n  width: 100%;\r\n  /*max-width: 480px;*/\r\n  min-width: 320px;\r\n\r\n}\r\n\r\n.left-column {\r\n  width: 320px;\r\n  margin-left: 15px;\r\n  margin-top: 7px;\r\n  z-index: 1;\r\n  position: relative;\r\n  background: #ffffff;\r\n  padding: 10px 10px;\r\n  border-radius: 5px;\r\n}\r\n\r\n.right-column {\r\n  position: fixed;\r\n  top: 0;\r\n}\r\n\r\n@media screen and (max-width: 700px) {\r\n  .right-column {\r\n    display: none;\r\n  }\r\n  .left-column {\r\n    width: 100%;\r\n    max-width: 700px;\r\n    margin: auto;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, ".root {\r\n  width: 100%;\r\n  /*max-width: 480px;*/\r\n  min-width: 320px;\r\n  padding-top: 109px;\r\n}\r\n@media (max-width: 768px) {\r\n  .root {\r\n  }\r\n}\r\n\r\n.left-column {\r\n  width: 320px;\r\n  margin-left: 15px;\r\n  margin-top: 13px;\r\n  z-index: 1;\r\n  position: relative;\r\n  background: #ffffff;\r\n  padding: 10px 10px;\r\n  border-radius: 5px;\r\n}\r\n\r\n.right-column {\r\n  position: fixed;\r\n  top: 0;\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n  .right-column {\r\n    display: none;\r\n  }\r\n  .left-column {\r\n    width: 100%;\r\n    max-width: 700px;\r\n    margin: auto;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"root\">\n  <div class=\"left-column\">\n    <app-search-form></app-search-form>\n    <app-points></app-points>\n  </div>\n  <div class=\"right-column\">\n    <app-map></app-map>\n  </div>\n</div>\n"
+module.exports = "<div class=\"root\">\n  <header class=\"main-header\">\n    <button class=\"c-hamburger c-hamburger--htx\"><span>toggle menu</span></button>\n    <div class=\"row row-row\">\n      <div class=\"col-sm-4\">\n        <div class=\"col-logo\">\n          <div class=\"row\">\n            <div class=\"col-sm-3 hidden-xs\"><img src=\"assets/u180.png\" alt=\"Gruzovoz\" class=\"logo\"></div>\n            <div class=\"col-xs-9\" style=\"top: -7px\">\n              <div class=\"logo-text\"><span class=\"green\">Грузо</span><span class=\"white\">воз</span></div>\n              <div class=\"hr\"></div>\n              <div class=\"logo-description white\">Оперативная доставка 24/7 по<br>Москве и московской области</div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-sm-5\">\n        <nav>\n          <ul class=\"nav navbar-nav collapsed\">\n            <li><a href=\"#\">Заказ доставки</a></li>\n            <li><a href=\"#\">О компании</a></li>\n            <li><a href=\"#\">Как стать водителем</a></li>\n          </ul>\n        </nav>\n      </div>\n      <div class=\"col-sm-2 contacts white\">\n        <div>+7 (495)<span class=\"green\">241-17-65</span></div>\n        <div>info@gruzovoz.me</div>\n      </div>\n    </div>\n  </header>\n  <div class=\"left-column\">\n    <app-search-form></app-search-form>\n    <app-points></app-points>\n  </div>\n  <div class=\"right-column\">\n    <app-map></app-map>\n  </div>\n</div>\n"
 
 /***/ }),
 
