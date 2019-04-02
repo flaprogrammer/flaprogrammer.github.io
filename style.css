@@ -1,0 +1,42 @@
+body {
+    font-size: 18px;
+}
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hello, .skills, .experience, .education, .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.hello .about_me {
+    grid-row: 2 / 3;
+}
+button {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(11, 101, 236, 0.9);
+    color: white;
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: uppercase;
+}
+
+
+@media(min-width: 576px) {}
+@media(min-width: 768px) {}
+@media(min-width: 992px) {
+    .hello {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hello .about_me {
+        grid-row: 1 / 2;
+    }
+}
+@media(min-width: 1200px) {}
