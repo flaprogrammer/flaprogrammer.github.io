@@ -6,35 +6,262 @@
         <!-- <meta name="keywords" content="HTML,CSS,XML,JavaScript"> -->
         <meta name="author" content="Lenar Fattahkov">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Noto+Sans:400,400i,700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <script src="main.js"></script>
     </head>
     <body>
-        <div class="container">
-
-            <hr>
-            <div class="hello">
-                <div class="about_me">
-                    <h1>I'm Lenar Fattahkov.</h1>
+        <div class="hidden" id="layout">
+            <div class="modal-container">
+                <div class="modal hidden" id="modal-cargo">
+                    <h3>
+                        Cargo transportation app
+                    </h3>
                     <p>
-                        I'm a frontend developer located in Kazan, Russia. I have 6+ years experience
-                         and deep knowledge of JavaScript, HTML/CSS. I like creating complex interfaces
-                          and smooth animations using any of modern Single Page Application frameworks 
-                          (React, Vue, Angular).
+                        <strong>Stack:</strong> Angular 4, TypeScript, Yandex Maps, SCSS
                     </p>
-                    <p>Email lenarfattakhov@yahoo.com</p>
-                    <p>Social </p>
-                    <button>Contact me</button>
-                    <button>Download CV</button>
+                    <p>Besides my fulltime job I also had time for freelance jobs. Here I helped one small
+                    startup team to build platform where clients can find carriers to transport the cargo.
+                    We decided to created MVP to show it to investors.</p>
+                    <p>It was time when Angular just released 4th version (by skipping 3rd), so why not use
+                    it for this? For maps we took Yandex Maps API, because for our goals it was the best
+                    variant.</p>
+                    <p>It was a good opportunity to see what changes appeared in new Angular and refresh my
+                    memories in working with maps API.</p>
+
+                    <p>Unfortunately, project wasn’t successful, and they closed in half a year.</p>
+                    <img src="assets/cargo/1.JPG">
+                    <img src="assets/cargo/2.JPG">
+                    <img src="assets/cargo/3.JPG">
                 </div>
-                <div class="photo">
-                    <img src="https://via.placeholder.com/300/09f/fff.png">
+                <div class="modal hidden" id="modal-upwork">
+                    <h3>
+                        Upwork
+                    </h3>
+                    <p>
+                        <strong>Stack:</strong> Angular.js, Symfony 2, Karma, Jasmine
+                    </p>
+                    <p>I worked for Upwork Global Inc in Job Search UI team for 2 years. We were responsible for Job Search
+                    page (https://www.upwork.com/o/jobs/browse/), Find Work Feed(https://www.upwork.com/ab/find-work/).
+                    For about half a year I helped other team with moving to new responsive version of Job Post
+                    (<a href="https://www.upwork.com/ab/job-post/new">https://www.upwork.com/ab/job-post/new</a>).</p>
+
+                    <p>It was the biggest web application I've ever worked on, and the most professional team and
+                    development process organization. All our team members worked remotely from the different
+                    parts of Earth: Europe, Asia, North and South America. Also I had a chance to see how big
+                    companies with a lot of developers (~300) work. I'm thankful for the unique experience of
+                    being part of the company who really helps to reduce inequality in the world.</p>
+
+                    <p>What about technologies, I used Symfony 2 (PHP framework), Composer, Angular.js, HTML/CSS.
+                    We didn't use any 3rd party libraries and created a lot of things from scratch.
+                    Our team used Scrum approach. So yes, we had sprints, meetings (sprint plannings, backlog
+                    groomings, demos, retrospectives). And it was done great.</p>
+
+                    <p>Unfortunately, project wasn’t successful, and they closed in half a year.</p>
+
+                    <img src="assets/upwork/1.JPG">
+                    <img src="assets/upwork/2.JPG">
+                    <img src="assets/upwork/3.JPG">
+                </div>
+                <div class="modal hidden" id="modal-namedrop">
+                    <h3>
+                        NameDrop
+                    </h3>
+                    <p>
+                        <strong>Stack:</strong> Vue.js, Vuex, SCSS
+                    </p>
+                    <p>This was a stable working marketplace made on Django (Python). Users can customize
+                    different products by custom designs, texts and then order them. Also you can create
+                    online shop, based on this website with products you created here.</p>
+
+                    <p>The problem was that UX sometimes was not so intuitive and it was too hard to change
+                    it using current technologies, so we decided to rebuild it into Single Page Application,
+                    by Vue.js.</p>
+
+                    <p>I have added featured items, trying to increase conversion. Also we added opportunity to
+                    change selected properties (product, design, text) on any step. Design got more flexible
+                    and responsive, loading speed noticeably increased.</p>
+
+                    <img src="assets/namedrop/1.JPG">
+                    <img src="assets/namedrop/2.JPG">
+                    <img src="assets/namedrop/3.JPG">
+                    <img src="assets/namedrop/4.JPG">
+                </div>
+                <div class="modal hidden" id="modal-getmati">
+                    <h3>
+                        GetMati
+                    </h3>
+                    <p>
+                        <strong>Stack:</strong> React.js, Redux, Formik, SCSS
+                    </p>
+                    I had a chance to get in the team for 4 months and mostly worked on merchants dashboard.
+                    Frontend was built using React and Redux for state management.
+
+                    <p>
+                        After my joining we did a lot of changes, let me list some of them
+                        <ul>
+
+                            <li>
+                                Made a lot of updates in design of dashboard, added new pages
+                            </li>
+                            <li>
+                                Redrafted our reusable UI components approach, started using styleguidist and almost finished UI kit
+                            </li>
+                            <li>
+                                Started displaying all states in asynchronous flow. (Request sent, request success, request error).
+                                Moved to optimistic updates with returning to old value on error.
+                            </li>
+                            <li>
+                                Improved forms, added client-side validation by Formik
+                            </li>
+
+                        </ul>
+                    </p>
+
+                    It was a great opportunity to join so ambitious team and dive into the atmosphere of startup. I really appreciate everything they did to me and hope to work with them in the future.
+
+                    <img src="assets/getmati/1.JPG">
+                    <img src="assets/getmati/2.JPG">
+                    <img src="assets/getmati/3.JPG">
+                </div>
+                <div class="modal hidden" id="modal-tailorframe">
+                    <h3>
+                        TailorFrame
+                    </h3>
+                    <p>
+                        <strong>Stack:</strong> Backbone.js, CSS, file-saver.js
+                    </p>
+                    <p>Project started with words "Our current developer couldn't add features we need,
+                    so we're not sure it's possible". What a challenge? Let's go.</p>
+
+                    <p>Maintaining another's code always harder than writing something from scratch,
+                    especially if it was done on framework you had never used before. But good chance
+                    to learn Backbone.</p>
+                    <p>Also there were JavaScript-Canvas-To-Blob and file-saver.js libraries, but it didn't
+                    take much time to understand how they work. Some code refactoring, one duct tape
+                    solution and feature is ready!</p>
+
+                    <p>After that I had few requests to maintain this project, until it wasn't successfully
+                    closed. But I liked it.</p>
+                    <img src="assets/tailorframe/1.JPG">
+                    <img src="assets/tailorframe/2.JPG">
+                    <img src="assets/tailorframe/3.JPG">
+                </div>
+                <div class="modal hidden" id="modal-ikea">
+                    <h3>
+                        Ikea Mood Forecast
+                    </h3>
+                    <p>
+                        <strong>Stack:</strong> jQuery, Web Audio API, CSS
+                    </p>
+                    <p>Unfortunately, it was the only project without NDA when I worked in Smarthead. We created
+                    a lot of complex and beautiful solutions for famous brands, but I can't mention them.</p>
+
+                    <p>Ikea Mood Forecast was a promo web application where room interior changes depending on
+                    the weather outside. By default it shows your city, but you can select any city in the
+                    world. And you can but everything in the photo on IKEA website.</p>
+
+                    <p>Depending on the forecast window view also changes. On cloudy days you can see some clouds,
+                    on wet weather snow or rain animation. (In some interiors there was also a mirror with
+                    window reflection).</p>
+
+                    <p>Also we had special music for this. It consisted of 5 streams, where every one of them
+                    showed state of temperature, humidity, wind speed, precipitations and atmosphere pressure.
+                    Default HTML5 audio couldn't keep the rhythm and sync 5 streams, so we used Web Audio API
+                    (but for old browsers like IE9 we still added HTML5 audio for backward compatibility).</p>
+                    <img src="assets/ikea/1.jpg">
+                    <img src="assets/ikea/2.jpg">
+                    <img src="assets/ikea/3.jpg">
+                </div>
+                <div class="modal hidden" id="modal-sporthouse">
+                    <h3>
+                        SportHouse
+                    </h3>
+                    <p>
+                        <strong>Stack:</strong> jQuery, Web Audio API, CSS
+                    </p>
+                    <p>In Fantasy Technologies this was the biggest project I've worked on. The idea was to
+                    "full-scratch" existing application, with moving backend to Node.js and refactoring
+                    client side, which was made on Adobe AIR.</p>
+
+                    <p>The application was used in a chain of fitness clubs. Admins and managers can add new
+                    users in the system, see all logs and statistics. Сlients can control their subscription
+                    and training process by personal RFID cards.</p>
+
+                    <p>And if I'm not mistaken, they still use this soft.</p>
+                    <img src="assets/sporthouse/1.jpg">
+                    <img src="assets/sporthouse/2.jpg">
+                    <img src="assets/sporthouse/3.jpg">
+                    <img src="assets/sporthouse/4.jpg">
                 </div>
             </div>
+        </div>
+        <div class="container">
+            <nav>
+                <button id="burger-menu-btn" onclick="return showMobileMenu();">
+                    <div id="burger-menu"></div>
+                </button>
+                <div class="mobile-menu">
+                    <a href="#hello">HELLO</a>
+                    <a href="#skills">SKILLS</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#education">EDUCATION</a>
+                    <a href="#portfolio">PORTFOLIO</a>
+                    <a href="#feedback">FEEDBACK</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+                <div class="container">
+                    <div class="main-menu">
+                        <a href="#hello">HELLO</a>
+                        <a href="#skills">SKILLS</a>
+                        <a href="#experience">EXPERIENCE</a>
+                        <a href="#education">EDUCATION</a>
+                        <a href="#portfolio">PORTFOLIO</a>
+                        <a href="#feedback">FEEDBACK</a>
+                        <a href="#contact">CONTACT</a>
+                    </div>
+
+                </div>
+            </nav>
             <hr>
-            <section class="skills">
+            <a class="anchor" id="hello"></a>
+            <section class="hello">
+                <div class="about_me">
+                    <h1 class="mb-4 mt-5">Lenar Fattahkov</h1>
+                    <p class="mb-6">
+                        Hello, I'm a frontend developer located in Kazan, Russia. I have 6+ years experience
+                         and deep knowledge of JavaScript, HTML/CSS. I like creating complex interfaces
+                          and smooth animations using any of modern Single Page Application frameworks
+                          (React, Vue, Angular).
+                    </p>
+                    <p>
+                        <b>Email:</b> lenarfattakhov@yahoo.com
+                    </p>
+                    <p class="mb-6 social-links">
+                        <b>Social:</b>
+                        <a href="https://www.facebook.com/profile.php?id=100006373442091" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://vk.com/id3943364" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me/lenarfattakhov" target="_blank">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </p>
+                    <a href="#contact"><button>Contact me</button></a>
+                    <!--<button>Download CV</button>-->
+                </div>
+                <div class="photo">
+                    <img src="assets/photo.jpg">
+                </div>
+            </section>
+            <hr>
+            <a class="anchor" id="skills"></a>
+            <section class="skills" >
                 <div>
-                    <h2>Skills.</h2>
+                    <h2>Skills</h2>
                     <p>
                         Variety of skills allows me to select the most appropriate technologies and develop interfaces used by millions
                     </p>
@@ -56,176 +283,392 @@
                             CoffeeScript, TypeScript
                         </p>
                     </article>
-              
+
                 </div>
             </section>
             <hr>
-    
+
+            <a class="anchor" id="experience"></a>
             <section class="experience">
                 <div>
-                    <h2>Experience.</h2>
-                    <p>I partner with startups, organizations and Fortune 500 companies to build digital 
-                        products that help clients overcome challenges and create lasting connections with millions 
+                    <h2>Experience</h2>
+                    <p>I partner with startups, organizations and Fortune 500 companies to build digital
+                        products that help clients overcome challenges and create lasting connections with millions
                         of people every day.
                     </p>
                 </div>
                 <section class="jobs">
                     <article class="job">
-                        <h3>Upwork.com ​</h3>
-                        <p>2016 October – 2018 September 1 year 11 months</p>
+                        <h3>Get Mati</h3>
+                        <small class="date_interval">
+                            Dec, 2018 – Apr, 2019
+                        </small>
                         <p>
-                            <p>
-                                Position: UI Engineer
-                            </p>
-    
-                            <p>
-                                Product: https://upwork.com
-                            </p>
-                            
-                            <p>
-                                Stack:  Angular.js, Symfony 2, Karma, Jasmine
-                            </p>
-                            <p>
-                                Responsibilities: 
-                            </p>
+                            <b>Position</b>: Frontend Developer
+                        </p>
+                        <p>
+                            <b>Product</b>: <a href="https://getmati.com">https://getmati.com</a>
+                        </p>
+                        <p>
+                            <b>Stack</b>:  React.js, Redux, SCSS, Formik
+                        </p>
+                        <p>
+                            <b>Responsibilities</b>:
+                        </p>
+                        <ul>
+                            <li>
+                                Maintained existing dashboard panel, redesigned and refactored it
+                            </li>
+                            <li>
+                                Added frontend side forms validation, improved UX
+                            </li>
+                            <li>
+                                Teached junior developers
+                            </li>
+                            <li>
+                                Improved UI library
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="job">
+                        <h3>Upwork Global Inc​</h3>
+                        <small class="date_interval">
+                            Oct, 2016 – Sep, 2018
+                            <!-- 1 year 11 months -->
+                        </small>
+                        <p>
+                            <b>Position</b>: UI Engineer
+                        </p>
+
+                        <p>
+                            <b>Product</b>: <a href="https://upwork.com">https://upwork.com</a>
+                        </p>
+                        <p>
+                            <b>Stack</b>:  Angular.js, Symfony 2, Karma, Jasmine
+                        </p>
+                        <p>
+                            <b>Responsibilities</b>:
+                        </p>
+                        <ul>
+                            <li>
+                                Maintained high loaded Job Search, Find Work and Job Post pages
+                            </li>
+                            <li>
+                                Moved these pages to responsive versions
+                            </li>
+                            <li>
+                                Worked on adding Services and Specializations experiment
+                            </li>
+                            <li>
+                                Wrote unit tests on Karma, Jasmine and PhpUnit
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="job">
+                        <h3>Infotech Group</h3>
+                        <small class="date_interval">
+                            Jun, 2016 – Oct, 2016
+                             <!-- 4 months -->
+                        </small>
+                        <p>
+                            <b>Website</b>: <a href="https://infotech.group">https://infotech.group</a>
+                        </p>
+                        <p>
+                            <b>Position</b>: Frontend Developer
+                        </p>
+                        <p>
+                            <b>Stack</b>: React, Redux, TypeScript, SCSS, OpenStreetMap
+                        </p>
+
+                        <p>
+                            <b>Responsibilities</b>:
                             <ul>
                                 <li>
-                                    Maintained high loaded Job Search, Find Work and Job Post pages;
+                                    Led the frontend team consisted of 5-6 developers
                                 </li>
                                 <li>
-                                    Moved these pages to responsive versions;
+                                    Build the architecture on Redux and TypeScript for core code structure, that will be used for next projects
                                 </li>
                                 <li>
-                                    Worked on adding Services and Specializations experiment
+                                    Used media queries and bootstrap to make design responsive
                                 </li>
                                 <li>
-                                    Wrote unit tests on Karma, Jasmine and PhpUnit
+                                    Teached junior developers which came from different technologies (Angular.js, Backbone, jQuery) to start using React.
                                 </li>
                             </ul>
                         </p>
                     </article>
                     <article class="job">
-                        <h3>Infotech Group</h3>
-                        <p>
-                            2016 June – 2016 October 4 months
-                        </p>
-                        <p>
-                            Website: https://infotech.group<br>
-                            Position: Frontend Developer<br>
-                            Stack: React, Redux, TypeScript, SCSS, OpenStreetMap<br>
-                            
-                            Responsibilities: <br>
-                            -Led the frontend team consisted of 5-6 developers;
-                            -Build the architecture on Redux and TypeScript for core code structure, that will be used for next projects;
-                            -Used media queries and bootstrap to make design responsive;
-                            Teached junior developers which came from different technologies (Angular.js, Backbone, jQuery) to start using React.  
-                        </p>
-                    </article>
-                    <article class="job">
                         <h3>Headmade</h3>
+                        <small class="date_interval">
+                            Mar, 2016 – Jun, 2016
+                             <!-- 3 months -->
+                        </small>
                         <p>
-                            2016 March – 2016 June 3 months
-                        </p>
-                        <p>
-                            Website: https://headmade.pro
-                            Position: Frontend Developer
-                            Stack: Angular 2, TypeScript, Foundation, Google Maps
-                            
-                            Responsibilities: 
-                            -Built booking service using Angular 2 when it was on beta
-                            -Worked with Google Maps to place markers and build routes
-                            Used Zurb Foundation for UI
+                            <p>
+                                <b>Website</b>: <a href="https://headmade.pro">https://headmade.pro</a>
+                            </p>
+                            <p>
+                                <b>Position</b>: Frontend Developer
+                            </p>
+                            <p>
+                                <b>Stack</b>: Angular 2, TypeScript, Foundation, Google Maps
+                            </p>
+                            <p>
+                                <b>Responsibilities</b>:
+                                <ul>
+                                    <li>
+                                        Built booking service using Angular 2 when it was on beta
+                                    </li>
+                                    <li>
+                                        Worked with Google Maps to place markers and build routes
+                                    </li>
+                                    <li>
+                                        Used Zurb Foundation for UI
+                                    </li>
+                                </ul>
+                            </p>
                         </p>
                     </article>
                     <article class="job">
                         <h3>SmartHead</h3>
+                        <small class="date_interval">
+                            Sep, 2014 – Mar, 2016
+                            <!-- 1 year 7 months -->
+                        </small>
                         <p>
-                            2014 September – 2016 March 1 year 7 months
+                            <b>Website</b>: <a href="https://smarthead.ru">https://smarthead.ru</a>
                         </p>
                         <p>
-                            Website: https://smarthead.ru
-                            Position: Frontend Developer
-                            Stack: HTML, CSS/SCSS, Vanilla JS, jQuery, React, Flux
-                            
+                            <b>Position</b>: Frontend Developer
+                        </p>
+                        <p>
+                            <b>Stack</b>: HTML, CSS/SCSS, Vanilla JS, jQuery, React, Flux
+                        </p>
+
+                        <p>
                             Signed an NDA and can’t tell about most of the projects, but on their website you can find some of their clients – Honda, Panasonic, McDonalds, Coca Cola, IKEA etc.
-                            
-                            Responsibilities: 
-                            -Started from the bottom, used IE9 compatible technologies
-                            -Created HTML emails
-                            -Created promo websites using HTML, CSS, Vanilla JS, jQuery
-                            Used React and Flux for few projects
+                        </p>
+
+                        <p>
+                            <b>Responsibilities</b>:
+                            <ul>
+                                <li>
+                                    Started from the bottom, used IE9 compatible technologies
+                                </li>
+                                <li>
+                                    Created HTML emails
+                                </li>
+                                <li>
+                                    Created promo websites using HTML, CSS, Vanilla JS, jQuery
+                                </li>
+                                <li>
+                                    Used React and Flux for few projects
+                                </li>
+                            </ul>
                         </p>
                     </article>
                     <article class="job">
                         <h3>Fantasy Technology</h3>
+                        <small class="date_interval">
+                            Jan, 2014 – Aug, 2014
+                        </small>
                         <p>
-                            2014 January – 
-                            2014 August
-                            8 months
+                            <b>Website:</b> <a href="https://ft-ru.ru">https://ft-ru.ru</a>
                         </p>
                         <p>
-                            Website: https://ft-ru.ru
-                            Position: Developer
-                            Stack: Flash, Adobe AIR, HTML/CSS, Node.js
-                            
-                            Responsibilities: 
-                            -Created interactive presentations on Flash
-                            -Build backend using Node.js
-                            -Worked on fitness club managing system, using RFID cards
-                            Created admin panels on HTML/CSS/JS 
+                            <b>Position</b>: Developer
+                        </p>
+                        <p>
+                            <b>Stack</b>: Flash, Adobe AIR, HTML/CSS, Node.js
+                        </p>
+
+                        <p>
+                            <b>Responsibilities</b>:
+                            <ul>
+                                <li>
+                                    Created interactive presentations on Flash
+                                </li>
+                                <li>
+                                    Build backend using Node.js
+                                </li>
+                                <li>
+                                    Worked on fitness club managing system, using RFID cards
+                                </li>
+                                <li>
+                                    Created admin panels on HTML/CSS/JS
+                                </li>
+                            </ul>
                         </p>
                     </article>
                     <article class="job">
                         <h3>Tatarmultfilm</h3>
+                        <small class="date_interval">
+                            Apr, 2013 – Jan, 2014
+                        </small>
                         <p>
-                            2013 April – 
-                            2014 January
-                            9 months
+                            <b>Website:</b> <a href="http://tatarmultfilm.ru">http://tatarmultfilm.ru</a>
                         </p>
                         <p>
-                            Website: http://tatarmultfilm.ru
-                            Position: Flash and JavaScript developer
-                            Stack: Flash, HTML, CSS, JS
-                            
-                            Responsibilities: 
-                            -Created educational games for children on Flash
-                            -Some games were moved to JavaScript
-                            Discussed with schoolbooks authors and created games concepts
+                            <b>Position</b>: Flash and JavaScript developer
+                        </p>
+                        <p>
+                            <b>Stack</b>: Flash, HTML, CSS, JS
+                        </p>
+                        <p>
+                            <b>Responsibilities</b>:
+                            <ul>
+                                <li>
+                                    Created educational games for children on Flash
+                                </li>
+                                <li>
+                                    Some games were moved to JavaScript
+                                </li>
+                                <li>
+                                    Discussed with schoolbooks authors and created games concepts
+                                </li>
+                            </ul>
                         </p>
                     </article>
                 </section>
             </section>
             <hr>
-    
+            <a class="anchor" id="education"></a>
             <section class="education">
                 <div>
-                    <h2>Education.</h2>
-                    <p>All my life I have been driven by my strong belief that education is important. I try to learn something new every single day.</p>
+                    <h2>Education</h2>
+                    <p>
+                        All my life I have been driven by my strong belief that education is important.
+                        I try to learn something new every single day.
+                    </p>
                 </div>
                 <div>
-                    <h3>Kazan Federal University, Russia Bachelor's degree in Computer Engineering </h3>
-                    <p>2009 sep - 2013 june</p>
+                    <h3>Computer Engineering <small>Kazan Federal University, Russia </small></h3>
+                    <small class="date_interval">Sep, 2009  - Jun, 2013</small>
+                    <p>Bachelor's degree in Computer Engineering.</p>
                 </div>
             </section>
             <hr>
-    
-            <section class="contact">
+            <a class="anchor" id="portfolio"></a>
+            <section class="portfolio">
                 <div>
-                    <h2>Contact.</h2>
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-item" onclick="showPortfolioModal('modal-namedrop')">
+                        <img src="assets/namedrop/1.jpg" id="namedrop">
+                    </div>
+                    <div class="portfolio-item" onclick="showPortfolioModal('modal-upwork')">
+                        <img src="assets/upwork/1.JPG" id="upwork">
+                    </div>
+                    <div class="portfolio-item" onclick="showPortfolioModal('modal-getmati')">
+                        <img src="assets/getmati/1.JPG" id="getmati">
+                    </div>
+                    <div class="portfolio-item" onclick="showPortfolioModal('modal-ikea')">
+                        <img src="assets/ikea/1.jpg" id="ikea" >
+                    </div>
+                    <div class="portfolio-item" onclick="showPortfolioModal('modal-tailorframe')">
+                        <img src="assets/tailorframe/1.JPG" id="tailorframe">
+                    </div>
+                    <div class="portfolio-item" onclick="showPortfolioModal('modal-cargo')">
+                        <img src="assets/cargo/1.JPG" id="cargo">
+                    </div>
+                    <div class="portfolio-item" onclick="showPortfolioModal('modal-sporthouse')">
+                        <img src="assets/sporthouse/1.jpg" id="sporthouse">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="feedback" id="feedback">
+                <div>
+                    <h2>Feedback</h2>
+                    <p>
+                        Take a look at the reviews of my customers and ensure the quality of my services.
+                    </p>
+                </div>
+                <div>
+                    <article>
+                        <h3><img src="assets/people/person1.jpg" alt="Dmytry Bovkun">
+                            Dmytry Bovkun
+                            <small>Project Architect - Upwork Global Inc</small></h3>
+                        <p>
+                            <i>
+                                Lenar is a hard-working engineer with constantly growing professional level,
+                                attention to the details and respectful to the team members and company deadlines.
+                                Over the contract lifetime he played an important role in the team and took part in
+                                challenging Frontend projects.
+                            </i>
+                        </p>
+                    </article>
+                    <hr>
+                    <article>
+                        <h3>
+                            <img src="assets/people/andre.jpg" alt="Andre Forde">
+                            <a href="https://www.linkedin.com/in/andre-forde-89663611/" target="_blank">Andre Forde</a>
+                            <small>Co-founder & CEO - Social Expression Inc</small></h3>
+                        <p>
+                            <i>
+                                Lenar has helped us on several projects and has proven his skills in UX and interface
+                                development. He always meets his estimates and delivers quality work. Would absolutely
+                                love to work with Lenar again.
+                            </i>
+                        </p>
+                    </article>
+                    <hr>
+                    <article>
+                        <h3>
+                            <img src="assets/people/rais.jpg" alt="Rais Rakhimov">
+                            <a href="https://www.linkedin.com/in/rais-rakhimov-28068a17b/" target="_blank">Rais Rakhimov</a>
+                            <small>Backend Team Lead - Headmade</small></h3>
+                        <p>
+                            <i>
+                                Fattakhov Lenar has knocked it out of the park for frontend of our web application.
+                                He's a great team player, who can take a broader look at the project and make the
+                                right architecture decision.
+                            </i>
+                        </p>
+                    </article>
+                    <hr>
+                    <article>
+                        <h3>
+                            <img src="assets/people/nikita.jpg" alt="Nikita Tikhonov">
+                            <a href="https://www.linkedin.com/in/nikita-tikhonov-5389a37a/" target="_blank">Nikita Tikhonov</a>
+                            <small>Head of Frontend Development - Smarthead</small>
+                        </h3>
+                        <p>
+                            <i>
+                                We worked together with Lenar for 2 years. I'm very pleased with his work. He's hard-working,
+                                neat, and he likes to face new challenges. He is always on the move, and learns new things
+                                all the time. Lenar often helped other developers in our company.
+                                <br>
+                                It's a pleasure to work with him, also because of his good sense of humor :)
+                                <br>
+                                P.S. Our whole team cried a lot after he left our company. We listened to Titanic OST and
+                                ate a lot of cake. Now, when pain left, there are only void in our souls. Maybe we should
+                                try to fill it with some nice dog, or buy PS4... It can help.
+                            </i>
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <hr>
+
+            <section class="contact" id="contact">
+                <div>
+                    <h2>Contact</h2>
                     <p>
                         Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.
                     </p>
                 </div>
                 <div>
                     <form>
-                        <input type="text">
-                        <input type="text">
-                        <textarea ></textarea>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="E-mail">
+                        <textarea placeholder="Message"></textarea>
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
             </section>
         </div>
-
     </body>
 </html>
