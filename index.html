@@ -9,12 +9,12 @@
         <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Noto+Sans:400,400i,700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <script src="main.js"></script>
     </head>
     <body>
         <div class="hidden" id="layout">
             <div class="modal-container">
                 <div class="modal hidden" id="modal-cargo">
+                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
                     <h3>
                         Cargo transportation app
                     </h3>
@@ -36,6 +36,7 @@
                     <img src="assets/cargo/3.JPG">
                 </div>
                 <div class="modal hidden" id="modal-upwork">
+                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
                     <h3>
                         Upwork
                     </h3>
@@ -43,7 +44,8 @@
                         <strong>Stack:</strong> Angular.js, Symfony 2, Karma, Jasmine
                     </p>
                     <p>I worked for Upwork Global Inc in Job Search UI team for 2 years. We were responsible for Job Search
-                    page (https://www.upwork.com/o/jobs/browse/), Find Work Feed(https://www.upwork.com/ab/find-work/).
+                    page (<a href="https://www.upwork.com/o/jobs/browse/">https://www.upwork.com/o/jobs/browse/</a>),
+                    Find Work Feed(<a href="https://www.upwork.com/ab/find-work">https://www.upwork.com/ab/find-work/</a>).
                     For about half a year I helped other team with moving to new responsive version of Job Post
                     (<a href="https://www.upwork.com/ab/job-post/new">https://www.upwork.com/ab/job-post/new</a>).</p>
 
@@ -61,10 +63,18 @@
                     <p>Unfortunately, project wasn’t successful, and they closed in half a year.</p>
 
                     <img src="assets/upwork/1.JPG">
-                    <img src="assets/upwork/2.JPG">
+                    <div class="mobile-screenshots-container">
+                        <div>
+                            <img src="assets/upwork/2.JPG" >
+                        </div>
+                        <div>
+                            <img src="assets/upwork/4.JPG" >
+                        </div>
+                    </div>
                     <img src="assets/upwork/3.JPG">
                 </div>
                 <div class="modal hidden" id="modal-namedrop">
+                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
                     <h3>
                         NameDrop
                     </h3>
@@ -89,6 +99,7 @@
                     <img src="assets/namedrop/4.JPG">
                 </div>
                 <div class="modal hidden" id="modal-getmati">
+                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
                     <h3>
                         GetMati
                     </h3>
@@ -126,6 +137,7 @@
                     <img src="assets/getmati/3.JPG">
                 </div>
                 <div class="modal hidden" id="modal-tailorframe">
+                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
                     <h3>
                         TailorFrame
                     </h3>
@@ -149,6 +161,7 @@
                     <img src="assets/tailorframe/3.JPG">
                 </div>
                 <div class="modal hidden" id="modal-ikea">
+                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
                     <h3>
                         Ikea Mood Forecast
                     </h3>
@@ -175,6 +188,7 @@
                     <img src="assets/ikea/3.jpg">
                 </div>
                 <div class="modal hidden" id="modal-sporthouse">
+                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
                     <h3>
                         SportHouse
                     </h3>
@@ -203,6 +217,7 @@
                     <div id="burger-menu"></div>
                 </button>
                 <div class="mobile-menu">
+                    <p>&#x2716;</p>
                     <a href="#hello">HELLO</a>
                     <a href="#skills">SKILLS</a>
                     <a href="#experience">EXPERIENCE</a>
@@ -211,7 +226,7 @@
                     <a href="#feedback">FEEDBACK</a>
                     <a href="#contact">CONTACT</a>
                 </div>
-                <div class="container">
+                <div class="container pa-0">
                     <div class="main-menu">
                         <a href="#hello">HELLO</a>
                         <a href="#skills">SKILLS</a>
@@ -230,13 +245,10 @@
                 <div class="about_me">
                     <h1 class="mb-4 mt-5">Lenar Fattahkov</h1>
                     <p class="mb-6">
-                        Hello, I'm a frontend developer located in Kazan, Russia. I have 6+ years experience
-                         and deep knowledge of JavaScript, HTML/CSS. I like creating complex interfaces
-                          and smooth animations using any of modern Single Page Application frameworks
-                          (React, Vue, Angular).
+                        Hello, I'm a 26 years old frontend developer located in Kazan, Russia. I have 6+ years of experience and deep knowledge of JavaScript, HTML/CSS. I like creating complex interfaces and smooth animations using any of modern Single Page Application frameworks (React, Vue, Angular).
                     </p>
                     <p>
-                        <b>Email:</b> lenarfattakhov@yahoo.com
+                        <b>Email:</b> <a href="mailto:lenarfattakhov@yahoo.com">lenarfattakhov@yahoo.com</a>
                     </p>
                     <p class="mb-6 social-links">
                         <b>Social:</b>
@@ -263,7 +275,7 @@
                 <div>
                     <h2>Skills</h2>
                     <p>
-                        Variety of skills allows me to select the most appropriate technologies and develop interfaces used by millions
+                        Variety of skills allows me to select the most appropriate technologies and develop interfaces used by millions.
                     </p>
                 </div>
                 <div class="right-block">
@@ -274,6 +286,25 @@
                             Cross-Platform development, HTML5 banners
                         </p>
                     </article>
+
+                    <div class="image-container">
+                        <!-- <img src="assets/skills/js/react.png" width="120px" style="right: 200px;">
+                        <img src="assets/skills/js/vue.png" width="60px" style="margin-left: 50px; margin-top: 100px;">
+                        <img src="assets/skills/js/angular.png" width="80px" style="margin-left: 150px; margin-top: 100px;">
+                        <img src="assets/skills/js/redux.png" width="100px" style="margin-left: 100px; margin-top: 50px;">
+                        <img src="assets/skills/html/bootstrap.png" width="65px" style="margin-left: 60px; margin-top: 30px;">
+                        <img src="assets/skills/html/less.png" width="40px" style="margin-left: 250px; margin-top: 100px;">
+                        <img src="assets/skills/html/sass.png" width="40px" style="margin-left: 250px; margin-top: 100px;">
+                        <img src="assets/skills/html/pug.png" width="40px" style="margin-left: 250px; margin-top: 100px;">
+                        <img src="assets/skills/js/backbone.png" width="50px" style="margin-left: 200px; margin-top: 10px;">
+                        <img src="assets/skills/js/coffeescript.png" width="60px" style="margin-left: 200px; margin-top: 120px;">
+                        <img src="assets/skills/js/grunt.png" width="40px" style="margin-left: 150px; margin-top: 20px;">
+                        <img src="assets/skills/js/gulp.png" width="25px" style="margin-left: 50px; margin-top: 150px;">
+                        <img src="assets/skills/js/mobx.png"width="30px" style="margin-left: 250px; margin-top: 100px;">
+                        <img src="assets/skills/js/typescript.png" width="40px" style="margin-left: 250px; margin-top: 100px;">
+                        <img src="assets/skills/js/webpack.png" width="60px" style="margin-left: 50px; margin-top: 100px;"> -->
+                        <img src="assets/skills/skills.png">
+                    </div>
                     <article>
                         <h3>JavaScript</h3>
                         <p>
@@ -283,7 +314,6 @@
                             CoffeeScript, TypeScript
                         </p>
                     </article>
-
                 </div>
             </section>
             <hr>
@@ -292,9 +322,7 @@
             <section class="experience">
                 <div>
                     <h2>Experience</h2>
-                    <p>I partner with startups, organizations and Fortune 500 companies to build digital
-                        products that help clients overcome challenges and create lasting connections with millions
-                        of people every day.
+                    <p>For the last 6+ years, I had an opportunity to work in a lot of places. Starting from junior developer position in the smallest web studio up to senior developer role in a largest international companies.
                     </p>
                 </div>
                 <section class="jobs">
@@ -537,10 +565,10 @@
             <section class="education">
                 <div>
                     <h2>Education</h2>
-                    <p>
-                        All my life I have been driven by my strong belief that education is important.
-                        I try to learn something new every single day.
-                    </p>
+                    <div>
+                        <p class="mb-1"><i>That's what university life is all about. Challenging, questioning, enjoying good people and good friends, and pushing yourself to the limit.</i></p>
+                    </div>
+                    <span>David Robinson</span>
                 </div>
                 <div>
                     <h3>Computer Engineering <small>Kazan Federal University, Russia </small></h3>
@@ -553,37 +581,62 @@
             <section class="portfolio">
                 <div>
                     <h2>Portfolio</h2>
+                    <p class="mb-4">
+                        Unfortunately, about 75% of all projects I've ever worked on are under NDA agreement. Luckily, we still have a lot to show.
+                    </p>
                 </div>
                 <div class="portfolio-container">
                     <div class="portfolio-item" onclick="showPortfolioModal('modal-namedrop')">
-                        <img src="assets/namedrop/1.jpg" id="namedrop">
+                        <img src="assets/namedrop/1.JPG" id="namedrop">
+                        <div class="hover-text">
+                            NameDrop
+                        </div>
                     </div>
                     <div class="portfolio-item" onclick="showPortfolioModal('modal-upwork')">
                         <img src="assets/upwork/1.JPG" id="upwork">
+                        <div class="hover-text">
+                            Upwork
+                        </div>
                     </div>
                     <div class="portfolio-item" onclick="showPortfolioModal('modal-getmati')">
                         <img src="assets/getmati/1.JPG" id="getmati">
+                        <div class="hover-text">
+                            GetMati
+                        </div>
                     </div>
                     <div class="portfolio-item" onclick="showPortfolioModal('modal-ikea')">
                         <img src="assets/ikea/1.jpg" id="ikea" >
+                        <div class="hover-text">
+                            Ikea Mood Forecast
+                        </div>
                     </div>
                     <div class="portfolio-item" onclick="showPortfolioModal('modal-tailorframe')">
                         <img src="assets/tailorframe/1.JPG" id="tailorframe">
+                        <div class="hover-text">
+                            TailorFrame
+                        </div>
                     </div>
                     <div class="portfolio-item" onclick="showPortfolioModal('modal-cargo')">
                         <img src="assets/cargo/1.JPG" id="cargo">
+                        <div class="hover-text">
+                            Cargo transportation app
+                        </div>
                     </div>
                     <div class="portfolio-item" onclick="showPortfolioModal('modal-sporthouse')">
                         <img src="assets/sporthouse/1.jpg" id="sporthouse">
+                        <div class="hover-text">
+                            SportHouse
+                        </div>
                     </div>
                 </div>
             </section>
             <hr>
-            <section class="feedback" id="feedback">
+            <a class="anchor" id="feedback"></a>
+            <section class="feedback">
                 <div>
                     <h2>Feedback</h2>
                     <p>
-                        Take a look at the reviews of my customers and ensure the quality of my services.
+                        Take a look at the reviews of my customers and colleagues to ensure the quality of my services.
                     </p>
                 </div>
                 <div>
@@ -657,18 +710,20 @@
                 <div>
                     <h2>Contact</h2>
                     <p>
-                        Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.
+                        Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now!
                     </p>
                 </div>
                 <div>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="E-mail">
-                        <textarea placeholder="Message"></textarea>
+                    <form id="contact_form" action="#contact" onsubmit="submitContactForm(); return false">
+                        <input type="text" placeholder="Name" name="name" value="" required>
+                        <input type="email" placeholder="E-mail" name="email" value="" required>
+                        <textarea rows="6" placeholder="Message" name="message" required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
             </section>
         </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
