@@ -12,9 +12,10 @@
     </head>
     <body>
         <div class="hidden" id="layout">
+            <button class="close-btn" onclick="closeModal()">&#x2716;</button>
             <div class="modal-container">
                 <div class="modal hidden" id="modal-cargo">
-                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
+                    <!-- <button class="close-btn" onclick="closeModal()">&#x2716;</button> -->
                     <h3>
                         Cargo transportation app
                     </h3>
@@ -36,7 +37,7 @@
                     <img src="assets/cargo/3.JPG">
                 </div>
                 <div class="modal hidden" id="modal-upwork">
-                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
+                    <!-- <button class="close-btn" onclick="closeModal()">&#x2716;</button> -->
                     <h3>
                         Upwork
                     </h3>
@@ -60,7 +61,6 @@
                     Our team used Scrum approach. So yes, we had sprints, meetings (sprint plannings, backlog
                     groomings, demos, retrospectives). And it was done great.</p>
 
-                    <p>Unfortunately, project wasn’t successful, and they closed in half a year.</p>
 
                     <img src="assets/upwork/1.JPG">
                     <div class="mobile-screenshots-container">
@@ -74,7 +74,7 @@
                     <img src="assets/upwork/3.JPG">
                 </div>
                 <div class="modal hidden" id="modal-namedrop">
-                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
+                    <!-- <button class="close-btn" onclick="closeModal()">&#x2716;</button> -->
                     <h3>
                         NameDrop
                     </h3>
@@ -99,7 +99,7 @@
                     <img src="assets/namedrop/4.JPG">
                 </div>
                 <div class="modal hidden" id="modal-getmati">
-                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
+                    <!-- <button class="close-btn" onclick="closeModal()">&#x2716;</button> -->
                     <h3>
                         GetMati
                     </h3>
@@ -137,7 +137,7 @@
                     <img src="assets/getmati/3.JPG">
                 </div>
                 <div class="modal hidden" id="modal-tailorframe">
-                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
+                    <!-- <button class="close-btn" onclick="closeModal()">&#x2716;</button> -->
                     <h3>
                         TailorFrame
                     </h3>
@@ -161,7 +161,7 @@
                     <img src="assets/tailorframe/3.JPG">
                 </div>
                 <div class="modal hidden" id="modal-ikea">
-                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
+                    <!-- <button class="close-btn" onclick="closeModal()">&#x2716;</button> -->
                     <h3>
                         Ikea Mood Forecast
                     </h3>
@@ -188,7 +188,7 @@
                     <img src="assets/ikea/3.jpg">
                 </div>
                 <div class="modal hidden" id="modal-sporthouse">
-                    <!-- <button class="close-btn" onclick="closePortfolioModal()">&#x2716;</button> -->
+                    <!-- <button class="close-btn" onclick="closeModal()">&#x2716;</button> -->
                     <h3>
                         SportHouse
                     </h3>
@@ -209,15 +209,24 @@
                     <img src="assets/sporthouse/3.jpg">
                     <img src="assets/sporthouse/4.jpg">
                 </div>
+                <div class="modal hidden" id="modal-success-contact">
+                    <h3>
+                        THANK YOU!
+                    </h3>
+                    <p>
+                        <strong>Your message was successfully sent. <br>I will contact you soon!</strong>
+                    </p>
+                    <img src="assets/success.svg" width="300px">
+                </div>
             </div>
         </div>
         <div class="container">
             <nav>
                 <button id="burger-menu-btn" onclick="return showMobileMenu();">
-                    <div id="burger-menu"></div>
+                    <div id="burger-menu-icon"></div>
                 </button>
-                <div class="mobile-menu">
-                    <p>&#x2716;</p>
+                <div class="mobile-menu hidden">
+                    <!-- <button>&#x2716;</button> -->
                     <a href="#hello">HELLO</a>
                     <a href="#skills">SKILLS</a>
                     <a href="#experience">EXPERIENCE</a>
@@ -586,43 +595,43 @@
                     </p>
                 </div>
                 <div class="portfolio-container">
-                    <div class="portfolio-item" onclick="showPortfolioModal('modal-namedrop')">
+                    <div class="portfolio-item" onclick="showModal('modal-namedrop')">
                         <img src="assets/namedrop/1.JPG" id="namedrop">
                         <div class="hover-text">
                             NameDrop
                         </div>
                     </div>
-                    <div class="portfolio-item" onclick="showPortfolioModal('modal-upwork')">
+                    <div class="portfolio-item" onclick="showModal('modal-upwork')">
                         <img src="assets/upwork/1.JPG" id="upwork">
                         <div class="hover-text">
                             Upwork
                         </div>
                     </div>
-                    <div class="portfolio-item" onclick="showPortfolioModal('modal-getmati')">
+                    <div class="portfolio-item" onclick="showModal('modal-getmati')">
                         <img src="assets/getmati/1.JPG" id="getmati">
                         <div class="hover-text">
                             GetMati
                         </div>
                     </div>
-                    <div class="portfolio-item" onclick="showPortfolioModal('modal-ikea')">
+                    <div class="portfolio-item" onclick="showModal('modal-ikea')">
                         <img src="assets/ikea/1.jpg" id="ikea" >
                         <div class="hover-text">
                             Ikea Mood Forecast
                         </div>
                     </div>
-                    <div class="portfolio-item" onclick="showPortfolioModal('modal-tailorframe')">
+                    <div class="portfolio-item" onclick="showModal('modal-tailorframe')">
                         <img src="assets/tailorframe/1.JPG" id="tailorframe">
                         <div class="hover-text">
                             TailorFrame
                         </div>
                     </div>
-                    <div class="portfolio-item" onclick="showPortfolioModal('modal-cargo')">
+                    <div class="portfolio-item" onclick="showModal('modal-cargo')">
                         <img src="assets/cargo/1.JPG" id="cargo">
                         <div class="hover-text">
                             Cargo transportation app
                         </div>
                     </div>
-                    <div class="portfolio-item" onclick="showPortfolioModal('modal-sporthouse')">
+                    <div class="portfolio-item" onclick="showModal('modal-sporthouse')">
                         <img src="assets/sporthouse/1.jpg" id="sporthouse">
                         <div class="hover-text">
                             SportHouse
@@ -705,8 +714,8 @@
                 </div>
             </section>
             <hr>
-
-            <section class="contact" id="contact">
+            <a href="" class="anchor" id="contact"></a>
+            <section class="contact">
                 <div>
                     <h2>Contact</h2>
                     <p>

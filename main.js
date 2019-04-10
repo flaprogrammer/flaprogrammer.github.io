@@ -1,12 +1,11 @@
 (function () {
     var mobileMenu = document.getElementsByClassName('mobile-menu')[0];
+    mobileMenu.onclick = closeMobileMenu;
     for (let i in mobileMenu.children) {
-        mobileMenu.children[i].onclick = function () {
-            mobileMenu.style.display = 'none';
-        }
+        mobileMenu.children[i].onclick = closeMobileMenu;
     }
     var layout = document.getElementById('layout');
-    layout.onclick = closePortfolioModal;
+    layout.onclick = closeModal;
     var modals = document.getElementsByClassName('modal');
     for (var i in modals) {
         modals[i].onclick = function (e) {
@@ -20,11 +19,24 @@
 
 
 function showMobileMenu() {
+    var burgerMenuIcon = document.getElementById('burger-menu-icon');
+    if (burgerMenuIcon.classList.contains('active')) {
+        closeMobileMenu();
+        return;
+    }
+    burgerMenuIcon.classList.add('active');
     var mobileMenu = document.getElementsByClassName('mobile-menu')[0];
-    mobileMenu.style.display = 'flex';
+    mobileMenu.classList.remove('hidden');
 }
 
-function showPortfolioModal(modalId) {
+function closeMobileMenu() {
+    var mobileMenu = document.getElementsByClassName('mobile-menu')[0];
+    mobileMenu.classList.add('hidden');
+    var burgerMenuIcon = document.getElementById('burger-menu-icon');
+    burgerMenuIcon.classList.remove('active');
+}
+
+function showModal(modalId) {
     var layout = document.getElementById('layout');
     layout.classList.remove('hidden');
     var modal = document.getElementById(modalId);
@@ -33,7 +45,7 @@ function showPortfolioModal(modalId) {
     body.classList.add('modal-open');
 }
 
-function closePortfolioModal() {
+function closeModal() {
     var layout = document.getElementById('layout');
     layout.classList.add('hidden');
     var modals = document.getElementsByClassName('modal');
@@ -58,7 +70,6 @@ function submitContactForm() {
     axios.post('https://www.enformed.io/uzkhhsdh/', {name, email, message})
       .then(response => showSuccessContactModal(response))
       .catch(error => console.log(error));
-
     return false;
 }
 
@@ -66,7 +77,8 @@ function showSuccessContactModal(response) {
     let submit = document.querySelector('#contact_form button');
 
     submit.setAttribute('disabled', false);
-    window.alert('Your message was successfully sent. I will contact you soon!');
+    showModal('modal-success-contact');
+    
     document.querySelector('#contact_form [name="name"]').value = '';
     document.querySelector('#contact_form [name="email"]').value = '';
     document.querySelector('#contact_form [name="message"]').value = '';
