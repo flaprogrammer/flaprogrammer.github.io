@@ -1,6 +1,6 @@
 :root {
-    --primary: rgba(11, 101, 236, 0.9);
-    --h3-background-color: rgba(11, 101, 236, 0.2);
+    --primary: #9f58f7;
+    --h3-background-color: #bf8ffa;
     --text-color: #6c6c6c;
 }
 html {
@@ -176,6 +176,7 @@ nav {
 .mobile-menu {
     display: flex;
     position: fixed;
+    opacity: 0.95;
     top: 0;
     left: 0;
     width: 100vw;
@@ -214,10 +215,30 @@ nav a {
 }
 .main-menu a {
     color: black;
+    display: block;
+    position: relative;
 }
+
 .main-menu a:hover, .main-menu a:visited:hover {
     color: var(--primary, blue);
 }
+.main-menu a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 153;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: 0.3s all ease;
+    background-color: var(--primary, blue);
+}
+.main-menu a:hover::after {
+    transform: scale(1);
+}
+
 .main-menu a:visited {
     color: black;
 }
@@ -295,6 +316,7 @@ h2 {
 .job h3 {
     padding: 5px 15px;
     background-color: var(--h3-background-color, rgba(11, 101, 236, 0.9));
+    color: white;
 }
 img {
     max-width: 100%;
@@ -305,6 +327,7 @@ button {
     padding: 20px;
     margin-bottom: 20px;
     border: none;
+    border-radius: 2px;
     background-color: var(--primary, rgba(11, 101, 236, 0.9));
     color: white;
     text-transform: uppercase;
@@ -418,7 +441,7 @@ b {
     bottom: -50%;
     align-items: center;
     justify-content: center;
-    background-color: rgb(11, 101, 236);
+    background-color: var(--primary);
     color: white;
     text-align: center;
     opacity: 0;
