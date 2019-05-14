@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/avatar-platform-admin/static/css/main.44cdaf65.chunk.css",
+    "main.js": "/avatar-platform-admin/static/js/main.5bfa4850.chunk.js",
+    "main.js.map": "/avatar-platform-admin/static/js/main.5bfa4850.chunk.js.map",
+    "runtime~main.js": "/avatar-platform-admin/static/js/runtime~main.248b9e91.js",
+    "runtime~main.js.map": "/avatar-platform-admin/static/js/runtime~main.248b9e91.js.map",
+    "static/css/2.0a7bf43b.chunk.css": "/avatar-platform-admin/static/css/2.0a7bf43b.chunk.css",
+    "static/js/2.cfe22a8f.chunk.js": "/avatar-platform-admin/static/js/2.cfe22a8f.chunk.js",
+    "static/js/2.cfe22a8f.chunk.js.map": "/avatar-platform-admin/static/js/2.cfe22a8f.chunk.js.map",
+    "index.html": "/avatar-platform-admin/index.html",
+    "precache-manifest.a3548b05792cd27b15a1db8ad718d181.js": "/avatar-platform-admin/precache-manifest.a3548b05792cd27b15a1db8ad718d181.js",
+    "service-worker.js": "/avatar-platform-admin/service-worker.js",
+    "static/css/2.0a7bf43b.chunk.css.map": "/avatar-platform-admin/static/css/2.0a7bf43b.chunk.css.map",
+    "static/css/main.44cdaf65.chunk.css.map": "/avatar-platform-admin/static/css/main.44cdaf65.chunk.css.map",
+    "static/media/add.ca3efbf7.svg": "/avatar-platform-admin/static/media/add.ca3efbf7.svg"
+  }
+}
