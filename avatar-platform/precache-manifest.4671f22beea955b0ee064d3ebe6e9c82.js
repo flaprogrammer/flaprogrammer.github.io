@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd0022873cf582a3ec3ff9a1ec342997",
+    "revision": "52a5d08717bead13b1f5e0cefef5b147",
     "url": "/avatar-platform/index.html"
   },
   {
-    "revision": "fc82f9735681bf3f7995",
+    "revision": "786ed893bbee09ebe7e7",
     "url": "/avatar-platform/static/css/2.6faac089.chunk.css"
   },
   {
-    "revision": "56b33507b0f5200b597a",
-    "url": "/avatar-platform/static/css/main.bf5282c3.chunk.css"
+    "revision": "ff96d2c4f6e2c216c04b",
+    "url": "/avatar-platform/static/css/main.a6adaadd.chunk.css"
   },
   {
-    "revision": "fc82f9735681bf3f7995",
-    "url": "/avatar-platform/static/js/2.a16c4f91.chunk.js"
+    "revision": "786ed893bbee09ebe7e7",
+    "url": "/avatar-platform/static/js/2.50d34616.chunk.js"
   },
   {
-    "revision": "56b33507b0f5200b597a",
-    "url": "/avatar-platform/static/js/main.2e436606.chunk.js"
+    "revision": "ff96d2c4f6e2c216c04b",
+    "url": "/avatar-platform/static/js/main.13c40820.chunk.js"
   },
   {
     "revision": "c745a33d24becba73b37",

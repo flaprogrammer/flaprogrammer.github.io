@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/avatar-platform-admin/static/css/main.1d980d43.chunk.css",
-    "main.js": "/avatar-platform-admin/static/js/main.b0ea9fcf.chunk.js",
-    "main.js.map": "/avatar-platform-admin/static/js/main.b0ea9fcf.chunk.js.map",
+    "main.css": "/avatar-platform-admin/static/css/main.77ad5a0a.chunk.css",
+    "main.js": "/avatar-platform-admin/static/js/main.11fd3124.chunk.js",
+    "main.js.map": "/avatar-platform-admin/static/js/main.11fd3124.chunk.js.map",
     "runtime~main.js": "/avatar-platform-admin/static/js/runtime~main.248b9e91.js",
     "runtime~main.js.map": "/avatar-platform-admin/static/js/runtime~main.248b9e91.js.map",
     "static/css/2.0a7bf43b.chunk.css": "/avatar-platform-admin/static/css/2.0a7bf43b.chunk.css",
-    "static/js/2.820d8e9d.chunk.js": "/avatar-platform-admin/static/js/2.820d8e9d.chunk.js",
-    "static/js/2.820d8e9d.chunk.js.map": "/avatar-platform-admin/static/js/2.820d8e9d.chunk.js.map",
+    "static/js/2.bd7dd429.chunk.js": "/avatar-platform-admin/static/js/2.bd7dd429.chunk.js",
+    "static/js/2.bd7dd429.chunk.js.map": "/avatar-platform-admin/static/js/2.bd7dd429.chunk.js.map",
     "index.html": "/avatar-platform-admin/index.html",
-    "precache-manifest.96b793799c07e768264a53c9861a0548.js": "/avatar-platform-admin/precache-manifest.96b793799c07e768264a53c9861a0548.js",
+    "precache-manifest.e8967d06f4e16129e91241b068a26381.js": "/avatar-platform-admin/precache-manifest.e8967d06f4e16129e91241b068a26381.js",
     "service-worker.js": "/avatar-platform-admin/service-worker.js",
     "static/css/2.0a7bf43b.chunk.css.map": "/avatar-platform-admin/static/css/2.0a7bf43b.chunk.css.map",
-    "static/css/main.1d980d43.chunk.css.map": "/avatar-platform-admin/static/css/main.1d980d43.chunk.css.map"
+    "static/css/main.77ad5a0a.chunk.css.map": "/avatar-platform-admin/static/css/main.77ad5a0a.chunk.css.map"
   }
 }
