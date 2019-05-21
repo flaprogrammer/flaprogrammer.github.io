@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/avatar-platform-admin/static/css/main.36b1e114.chunk.css",
-    "main.js": "/avatar-platform-admin/static/js/main.f55ead4a.chunk.js",
-    "main.js.map": "/avatar-platform-admin/static/js/main.f55ead4a.chunk.js.map",
+    "main.css": "/avatar-platform-admin/static/css/main.68019d7f.chunk.css",
+    "main.js": "/avatar-platform-admin/static/js/main.970ebd2d.chunk.js",
+    "main.js.map": "/avatar-platform-admin/static/js/main.970ebd2d.chunk.js.map",
     "runtime~main.js": "/avatar-platform-admin/static/js/runtime~main.248b9e91.js",
     "runtime~main.js.map": "/avatar-platform-admin/static/js/runtime~main.248b9e91.js.map",
-    "static/css/2.0a7bf43b.chunk.css": "/avatar-platform-admin/static/css/2.0a7bf43b.chunk.css",
-    "static/js/2.e5b9a658.chunk.js": "/avatar-platform-admin/static/js/2.e5b9a658.chunk.js",
-    "static/js/2.e5b9a658.chunk.js.map": "/avatar-platform-admin/static/js/2.e5b9a658.chunk.js.map",
+    "static/css/2.319e882b.chunk.css": "/avatar-platform-admin/static/css/2.319e882b.chunk.css",
+    "static/js/2.ee3ff8e7.chunk.js": "/avatar-platform-admin/static/js/2.ee3ff8e7.chunk.js",
+    "static/js/2.ee3ff8e7.chunk.js.map": "/avatar-platform-admin/static/js/2.ee3ff8e7.chunk.js.map",
     "index.html": "/avatar-platform-admin/index.html",
-    "precache-manifest.54a4e347aa94de54c4fe1242ffca4863.js": "/avatar-platform-admin/precache-manifest.54a4e347aa94de54c4fe1242ffca4863.js",
+    "precache-manifest.abba598bdcb5ae6635fac0739bf63e9e.js": "/avatar-platform-admin/precache-manifest.abba598bdcb5ae6635fac0739bf63e9e.js",
     "service-worker.js": "/avatar-platform-admin/service-worker.js",
-    "static/css/2.0a7bf43b.chunk.css.map": "/avatar-platform-admin/static/css/2.0a7bf43b.chunk.css.map",
-    "static/css/main.36b1e114.chunk.css.map": "/avatar-platform-admin/static/css/main.36b1e114.chunk.css.map"
+    "static/css/2.319e882b.chunk.css.map": "/avatar-platform-admin/static/css/2.319e882b.chunk.css.map",
+    "static/css/main.68019d7f.chunk.css.map": "/avatar-platform-admin/static/css/main.68019d7f.chunk.css.map"
   }
 }
