@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c27d3ed191b5eb258e635e8f8fe69ef",
+    "revision": "3e64663b7f0c09752b409149f6b45d5d",
     "url": "/avatar-platform/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/avatar-platform/static/css/2.6faac089.chunk.css"
   },
   {
-    "revision": "a87da1c206051921ce80",
+    "revision": "363b73efb5d517885fd3",
     "url": "/avatar-platform/static/css/main.f1809fd3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/avatar-platform/static/js/2.d7f53770.chunk.js"
   },
   {
-    "revision": "a87da1c206051921ce80",
-    "url": "/avatar-platform/static/js/main.cc905a36.chunk.js"
+    "revision": "363b73efb5d517885fd3",
+    "url": "/avatar-platform/static/js/main.b9b9c878.chunk.js"
   },
   {
     "revision": "c745a33d24becba73b37",
