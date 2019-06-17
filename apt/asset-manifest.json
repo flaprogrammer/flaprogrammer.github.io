@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/avatar-platform/static/css/main.f1809fd3.chunk.css",
-    "main.js": "/avatar-platform/static/js/main.89bb1eca.chunk.js",
-    "main.js.map": "/avatar-platform/static/js/main.89bb1eca.chunk.js.map",
-    "runtime~main.js": "/avatar-platform/static/js/runtime~main.b0f8d053.js",
-    "runtime~main.js.map": "/avatar-platform/static/js/runtime~main.b0f8d053.js.map",
-    "static/css/2.6faac089.chunk.css": "/avatar-platform/static/css/2.6faac089.chunk.css",
-    "static/js/2.b2c18982.chunk.js": "/avatar-platform/static/js/2.b2c18982.chunk.js",
-    "static/js/2.b2c18982.chunk.js.map": "/avatar-platform/static/js/2.b2c18982.chunk.js.map",
-    "index.html": "/avatar-platform/index.html",
-    "precache-manifest.1adcdc8dd571491f5782e4a5da30f62e.js": "/avatar-platform/precache-manifest.1adcdc8dd571491f5782e4a5da30f62e.js",
-    "service-worker.js": "/avatar-platform/service-worker.js",
-    "static/css/2.6faac089.chunk.css.map": "/avatar-platform/static/css/2.6faac089.chunk.css.map",
-    "static/css/main.f1809fd3.chunk.css.map": "/avatar-platform/static/css/main.f1809fd3.chunk.css.map",
-    "static/media/pipette.1fc4aeaa.svg": "/avatar-platform/static/media/pipette.1fc4aeaa.svg"
+    "main.css": "/apt/static/css/main.f1809fd3.chunk.css",
+    "main.js": "/apt/static/js/main.7c8e49f2.chunk.js",
+    "main.js.map": "/apt/static/js/main.7c8e49f2.chunk.js.map",
+    "runtime~main.js": "/apt/static/js/runtime~main.148f597c.js",
+    "runtime~main.js.map": "/apt/static/js/runtime~main.148f597c.js.map",
+    "static/css/2.6faac089.chunk.css": "/apt/static/css/2.6faac089.chunk.css",
+    "static/js/2.b2c18982.chunk.js": "/apt/static/js/2.b2c18982.chunk.js",
+    "static/js/2.b2c18982.chunk.js.map": "/apt/static/js/2.b2c18982.chunk.js.map",
+    "index.html": "/apt/index.html",
+    "precache-manifest.aa91b96fbe75e9e8658656849166925d.js": "/apt/precache-manifest.aa91b96fbe75e9e8658656849166925d.js",
+    "service-worker.js": "/apt/service-worker.js",
+    "static/css/2.6faac089.chunk.css.map": "/apt/static/css/2.6faac089.chunk.css.map",
+    "static/css/main.f1809fd3.chunk.css.map": "/apt/static/css/main.f1809fd3.chunk.css.map",
+    "static/media/pipette.1fc4aeaa.svg": "/apt/static/media/pipette.1fc4aeaa.svg"
   }
 }
