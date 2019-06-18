@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/avatar-platform/static/css/main.06b70518.chunk.css",
-    "main.js": "/avatar-platform/static/js/main.367451d2.chunk.js",
-    "main.js.map": "/avatar-platform/static/js/main.367451d2.chunk.js.map",
+    "main.css": "/avatar-platform/static/css/main.8193991a.chunk.css",
+    "main.js": "/avatar-platform/static/js/main.acf268eb.chunk.js",
+    "main.js.map": "/avatar-platform/static/js/main.acf268eb.chunk.js.map",
     "runtime~main.js": "/avatar-platform/static/js/runtime~main.b0f8d053.js",
     "runtime~main.js.map": "/avatar-platform/static/js/runtime~main.b0f8d053.js.map",
     "static/css/2.6faac089.chunk.css": "/avatar-platform/static/css/2.6faac089.chunk.css",
-    "static/js/2.3042563f.chunk.js": "/avatar-platform/static/js/2.3042563f.chunk.js",
-    "static/js/2.3042563f.chunk.js.map": "/avatar-platform/static/js/2.3042563f.chunk.js.map",
+    "static/js/2.9cdb1042.chunk.js": "/avatar-platform/static/js/2.9cdb1042.chunk.js",
+    "static/js/2.9cdb1042.chunk.js.map": "/avatar-platform/static/js/2.9cdb1042.chunk.js.map",
     "index.html": "/avatar-platform/index.html",
-    "precache-manifest.b30d82454849540d7c86ade8ac9ec468.js": "/avatar-platform/precache-manifest.b30d82454849540d7c86ade8ac9ec468.js",
+    "precache-manifest.f936f8b2d6755c798898c17a142b8d96.js": "/avatar-platform/precache-manifest.f936f8b2d6755c798898c17a142b8d96.js",
     "service-worker.js": "/avatar-platform/service-worker.js",
     "static/css/2.6faac089.chunk.css.map": "/avatar-platform/static/css/2.6faac089.chunk.css.map",
-    "static/css/main.06b70518.chunk.css.map": "/avatar-platform/static/css/main.06b70518.chunk.css.map",
+    "static/css/main.8193991a.chunk.css.map": "/avatar-platform/static/css/main.8193991a.chunk.css.map",
     "static/media/pipette.1fc4aeaa.svg": "/avatar-platform/static/media/pipette.1fc4aeaa.svg"
   }
 }
