@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/avatar-platform/static/css/main.5a57cc0b.chunk.css",
-    "main.js": "/avatar-platform/static/js/main.bcf52aff.chunk.js",
-    "main.js.map": "/avatar-platform/static/js/main.bcf52aff.chunk.js.map",
+    "main.js": "/avatar-platform/static/js/main.9c843a02.chunk.js",
+    "main.js.map": "/avatar-platform/static/js/main.9c843a02.chunk.js.map",
     "runtime~main.js": "/avatar-platform/static/js/runtime~main.b0f8d053.js",
     "runtime~main.js.map": "/avatar-platform/static/js/runtime~main.b0f8d053.js.map",
     "static/css/2.09f2836f.chunk.css": "/avatar-platform/static/css/2.09f2836f.chunk.css",
     "static/js/2.58bdd56b.chunk.js": "/avatar-platform/static/js/2.58bdd56b.chunk.js",
     "static/js/2.58bdd56b.chunk.js.map": "/avatar-platform/static/js/2.58bdd56b.chunk.js.map",
     "index.html": "/avatar-platform/index.html",
-    "precache-manifest.a22716c34b6d755a0f544264bd513ab3.js": "/avatar-platform/precache-manifest.a22716c34b6d755a0f544264bd513ab3.js",
+    "precache-manifest.f3249c6a5ee0b24d12b57012b9d58c37.js": "/avatar-platform/precache-manifest.f3249c6a5ee0b24d12b57012b9d58c37.js",
     "service-worker.js": "/avatar-platform/service-worker.js",
     "static/css/2.09f2836f.chunk.css.map": "/avatar-platform/static/css/2.09f2836f.chunk.css.map",
     "static/css/main.5a57cc0b.chunk.css.map": "/avatar-platform/static/css/main.5a57cc0b.chunk.css.map",
