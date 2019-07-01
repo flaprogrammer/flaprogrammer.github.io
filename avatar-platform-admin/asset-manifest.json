@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/avatar-platform-admin/static/css/main.82910360.chunk.css",
-    "main.js": "/avatar-platform-admin/static/js/main.d4d5c011.chunk.js",
-    "main.js.map": "/avatar-platform-admin/static/js/main.d4d5c011.chunk.js.map",
+    "main.js": "/avatar-platform-admin/static/js/main.af17d6bc.chunk.js",
+    "main.js.map": "/avatar-platform-admin/static/js/main.af17d6bc.chunk.js.map",
     "runtime~main.js": "/avatar-platform-admin/static/js/runtime~main.248b9e91.js",
     "runtime~main.js.map": "/avatar-platform-admin/static/js/runtime~main.248b9e91.js.map",
     "static/css/2.319e882b.chunk.css": "/avatar-platform-admin/static/css/2.319e882b.chunk.css",
-    "static/js/2.16600f64.chunk.js": "/avatar-platform-admin/static/js/2.16600f64.chunk.js",
-    "static/js/2.16600f64.chunk.js.map": "/avatar-platform-admin/static/js/2.16600f64.chunk.js.map",
+    "static/js/2.526dad77.chunk.js": "/avatar-platform-admin/static/js/2.526dad77.chunk.js",
+    "static/js/2.526dad77.chunk.js.map": "/avatar-platform-admin/static/js/2.526dad77.chunk.js.map",
     "index.html": "/avatar-platform-admin/index.html",
-    "precache-manifest.ed9c8db2ee06bc5f9afc7c037c52cbfd.js": "/avatar-platform-admin/precache-manifest.ed9c8db2ee06bc5f9afc7c037c52cbfd.js",
+    "precache-manifest.45371ee835f297e6f1ea0972e47d4b3b.js": "/avatar-platform-admin/precache-manifest.45371ee835f297e6f1ea0972e47d4b3b.js",
     "service-worker.js": "/avatar-platform-admin/service-worker.js",
     "static/css/2.319e882b.chunk.css.map": "/avatar-platform-admin/static/css/2.319e882b.chunk.css.map",
     "static/css/main.82910360.chunk.css.map": "/avatar-platform-admin/static/css/main.82910360.chunk.css.map"
