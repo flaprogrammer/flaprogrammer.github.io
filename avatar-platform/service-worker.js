@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/avatar-platform/precache-manifest.9843e71f1f127061c8b5434492869768.js"
+  "/avatar-platform/precache-manifest.4b0817a05bbb5b82b3114eb439766b24.js"
 );
 
 self.addEventListener('message', (event) => {
